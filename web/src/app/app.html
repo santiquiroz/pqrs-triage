@@ -1,0 +1,34 @@
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+  <div class="barra">
+    <a class="marca" routerLink="/triage" aria-label="Mesa de PQRS, inicio">
+      <img src="logo-suruworks.svg" alt="SuruWorks" height="28" />
+      <span class="producto">Mesa de PQRS <span class="suave">· Demo de triage con IA</span></span>
+    </a>
+    <label class="selector">
+      <span class="eyebrow">Modelo de decisión</span>
+      <select [value]="proveedores.seleccionado() ?? ''" (change)="cambiarProveedor($event)" [disabled]="!proveedores.proveedores().length">
+        @for (p of proveedores.proveedores(); track p.id) {
+          <option [value]="p.id" [disabled]="!p.disponible" [title]="p.motivoNoDisponible ?? p.descripcion" [selected]="p.id === proveedores.seleccionado()">
+            {{ p.nombre }}{{ p.disponible ? '' : ' (no disponible)' }}
+          </option>
+        } @empty {
+          <option value="">Sin conexión con la API</option>
+        }
+      </select>
+    </label>
+  </div>
+  <nav aria-label="Secciones de la demo">
+    @for (e of enlaces; track e.ruta) {
+      <a [routerLink]="e.ruta" routerLinkActive="activo" ariaCurrentWhenActive="page">{{ e.texto }}</a>
+    }
+  </nav>
+</header>
+
+<main id="contenido" tabindex="-1">
+  <router-outlet />
+</main>
+
+<footer class="pie">
+  <span>Demo local de SuruWorks · Los correos se guardan en una bandeja simulada y no se envían.</span>
+</footer>

@@ -1,0 +1,53 @@
+:host { display: grid; gap: 20px; }
+
+.cabecera { display: grid; gap: 8px; max-width: 70ch; }
+
+.controles {
+  display: grid; gap: 16px; grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr); align-items: start;
+  .botones, .guardados { grid-column: 1 / -1; }
+}
+
+.proveedores {
+  border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px;
+  legend { font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; padding: 0; }
+}
+
+.casilla { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; cursor: pointer; }
+.botones { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.progreso {
+  display: grid; grid-template-columns: 90px minmax(0, 1fr) 70px; gap: 12px; align-items: center; font-size: 0.85rem;
+  .nombre { font-weight: 600; }
+  .pista { height: 8px; border-radius: 2px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borde); overflow: hidden; }
+  .relleno { display: block; height: 100%; background: var(--navy); transition: width var(--duracion) var(--curva); }
+}
+
+.titulo { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.filtros { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.en-linea { grid-auto-flow: column; align-items: center; }
+
+.resumen {
+  th[scope='row'] { font-size: 0.85rem; text-transform: none; letter-spacing: 0; color: var(--texto); font-weight: 600; border-bottom: 1px solid var(--borde); }
+  .mejor { font-weight: 700; color: var(--navy); background: var(--cian-suave); }
+}
+
+.leyenda { font-size: 0.8rem; margin-bottom: 8px; }
+.muestra { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin: 0 2px 0 8px; vertical-align: -1px; }
+
+.casos {
+  tbody tr { cursor: pointer; }
+  tbody tr:hover td, tbody tr:focus-visible td { background: var(--fondo); }
+  .caso { display: grid; gap: 2px; min-width: 220px; span { font-size: 0.8rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } }
+  .celda { font-size: 0.82rem; max-width: 190px; }
+}
+
+.si { background: #e3f2f0; }
+.no { background: #f8e6dd; color: #8a3b1c; }
+.na { color: var(--gris); }
+.muestra.si { background: var(--teal); }
+.muestra.no { background: var(--terracota); }
+.muestra.na { background: var(--gris); }
+
+@media (max-width: 760px) {
+  .controles { grid-template-columns: minmax(0, 1fr); }
+}

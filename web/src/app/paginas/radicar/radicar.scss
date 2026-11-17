@@ -1,0 +1,49 @@
+:host { display: grid; gap: 24px; }
+
+.cabecera { display: grid; gap: 8px; max-width: 64ch; }
+
+.rejilla { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 24px; align-items: start; }
+
+// Las opciones largas del select de tipología ensanchan la columna si no se acota.
+.formulario {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px;
+  .campo { grid-template-columns: minmax(0, 1fr); }
+  .boton { justify-self: start; }
+}
+
+.ayuda { font-weight: 400; font-size: 0.8rem; }
+
+.entendimos {
+  display: grid; gap: 12px; position: sticky; top: 120px;
+  border-top: 4px solid var(--cian);
+  dl { margin: 0; display: grid; gap: 12px; }
+  dt { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-suave); }
+  dd { margin: 4px 0 0; }
+}
+
+.nota {
+  padding: 10px 12px; border-left: 3px solid var(--azul); background: var(--cian-suave); font-size: 0.88rem;
+  strong { color: var(--navy); }
+  ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+}
+
+.senales {
+  list-style: none; margin: 0; padding: 10px 0 0; border-top: 1px dashed var(--borde-fuerte);
+  display: grid; gap: 4px; font-size: 0.85rem; color: var(--texto-suave);
+  .activa { color: var(--navy); font-weight: 700; }
+}
+
+.confirmacion { display: grid; gap: 12px; max-width: 760px; h2 { font-size: 1.8rem; } .boton { justify-self: start; } }
+
+.antes-ahora {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  border: 1px solid var(--borde); border-radius: var(--radio-tarjeta); overflow: hidden; background: var(--superficie);
+  > div { padding: 16px 20px; display: grid; gap: 4px; }
+  > div + div { border-left: 1px solid var(--borde); background: var(--cian-suave); }
+}
+
+@media (max-width: 860px) {
+  .rejilla, .antes-ahora { grid-template-columns: minmax(0, 1fr); }
+  .entendimos { position: static; }
+  .antes-ahora > div + div { border-left: 0; border-top: 1px solid var(--borde); }
+}

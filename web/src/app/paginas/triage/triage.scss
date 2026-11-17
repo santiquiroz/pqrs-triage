@@ -1,0 +1,149 @@
+:host { display: block; }
+
+.encabezado-vista {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.tesis { display: grid; gap: 10px; max-width: 62ch; }
+.bajada { font-size: 1.05rem; color: var(--texto-suave); }
+
+.tarea { display: grid; gap: 8px; }
+.tarea-texto { font-family: var(--fuente-titulo); font-weight: 600; color: var(--navy); }
+
+.interruptor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--borde-fuerte);
+  border-radius: var(--radio-control);
+  overflow: hidden;
+
+  button {
+    min-height: 36px;
+    border: 0;
+    background: var(--superficie);
+    color: var(--texto-suave);
+    font: 600 0.85rem var(--fuente-texto);
+    cursor: pointer;
+    &.activo { background: var(--navy); color: #fff; }
+    &:disabled { opacity: 0.5; cursor: not-allowed; }
+  }
+}
+
+.mesa {
+  display: grid;
+  grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.columna-bandeja,
+.panel { display: grid; gap: 14px; min-width: 0; }
+
+.titulo-columna { display: flex; align-items: baseline; justify-content: space-between; }
+
+.bandeja { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+.caso {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px;
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: var(--superficie);
+  color: var(--texto);
+  font: inherit;
+  cursor: pointer;
+  transition: border-color var(--duracion) var(--curva), box-shadow var(--duracion) var(--curva), transform var(--duracion) var(--curva);
+
+  &:hover { border-color: var(--borde-fuerte); transform: translateX(2px); }
+  &.activo { border-color: var(--navy); box-shadow: inset 4px 0 0 var(--cian), var(--sombra-activa); }
+}
+
+.canal {
+  width: 34px; height: 34px; border-radius: 8px; display: grid; place-items: center;
+  background: var(--fondo); color: var(--azul);
+  svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+}
+
+.cuerpo { display: grid; gap: 3px; min-width: 0; }
+.linea { display: flex; justify-content: space-between; gap: 8px; }
+.remitente { font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.linea time { font-size: 0.75rem; white-space: nowrap; }
+.empresa { font-size: 0.78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.asunto { font-size: 0.86rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pildoras { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.clasificando { font-size: 0.78rem; font-weight: 600; color: var(--azul); }
+
+.escribir { justify-self: start; }
+
+.detalle { display: grid; gap: 8px; }
+.meta { font-size: 0.82rem; overflow-wrap: anywhere; }
+.mensaje { white-space: pre-line; font-size: 0.9rem; max-height: 340px; overflow-y: auto; padding-right: 4px; }
+.declarados { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; .eyebrow { width: 100%; } }
+.esperado { border-top: 1px dashed var(--borde-fuerte); padding-top: 8px; }
+
+.proveedor-fila {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 14px 18px;
+}
+.proveedor { display: grid; gap: 1px; strong { font-family: var(--fuente-titulo); color: var(--navy); } }
+.modelo { font-size: 0.8rem; }
+.insignia-proveedor { font-weight: 700; color: var(--azul); }
+
+.metricas {
+  display: flex; gap: 18px; margin: 0;
+  dt { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-suave); }
+  dd { margin: 0; font-weight: 600; }
+}
+
+.pasos-tarjeta { display: grid; gap: 16px; }
+.acciones-principales,
+.fila-botones { display: flex; flex-wrap: wrap; gap: 8px; }
+.estado { font-size: 0.82rem; min-height: 1.2em; margin-top: -6px; }
+
+.titulo-juicios { display: grid; gap: 4px; margin-top: 6px; p { font-size: 0.85rem; } }
+
+.juicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 10px;
+}
+
+.extraidos { display: grid; gap: 10px; }
+.grupos-extraidos { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); > div { display: grid; gap: 4px; } }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.nota { font-size: 0.76rem; }
+
+.correccion { display: grid; gap: 12px; }
+
+.correos { display: grid; gap: 8px; }
+
+.acciones-finales { margin-top: 2px; }
+
+.crudo {
+  border: 1px solid var(--borde); border-radius: 10px; background: var(--superficie); padding: 10px 14px;
+  summary { cursor: pointer; font-weight: 600; color: var(--azul); }
+  pre { margin: 10px 0 0; max-height: 420px; overflow: auto; font-size: 0.75rem; background: var(--fondo); padding: 12px; border-radius: 6px; }
+}
+
+.comparacion { display: grid; gap: 10px; }
+.falla { color: var(--terracota); }
+
+.vacio { display: grid; gap: 4px; text-align: center; padding: 36px 20px; border-style: dashed; }
+
+.regla-pie {
+  font-size: 0.8rem; color: var(--texto-suave);
+  border-top: 1px solid var(--borde); padding-top: 12px; margin-top: 4px;
+}
+
+@media (max-width: 1023px) {
+  .mesa { grid-template-columns: minmax(0, 1fr); }
+  .encabezado-vista { grid-template-columns: minmax(0, 1fr); align-items: start; }
+}

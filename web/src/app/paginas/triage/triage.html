@@ -1,0 +1,262 @@
+<section class="encabezado-vista">
+  <div class="tesis">
+    <span class="eyebrow">Demo local · Mesa de PQRS de SuruWorks</span>
+    <h1>Mira a la IA clasificar la bandeja de PQRS</h1>
+    <p class="bajada">La IA juzga el caso. Las reglas de SuruWorks (áreas, responsables, ANS y correos) las aplica el código.</p>
+  </div>
+  <aside class="tarea tarjeta" aria-label="Tarea de la demo">
+    <span class="eyebrow">Tarea</span>
+    <p class="tarea-texto">Clasificar, priorizar y enrutar cada PQRS</p>
+    <div class="interruptor" role="group" aria-label="Modo de recorrido de la bandeja">
+      <button type="button" [class.activo]="!automatico()" [attr.aria-pressed]="!automatico()" (click)="detenerAutomatico()">Manual</button>
+      <button type="button" [class.activo]="automatico()" [attr.aria-pressed]="automatico()" [disabled]="!casos().length" (click)="iniciarAutomatico()">Automático · 3 s</button>
+    </div>
+  </aside>
+</section>
+
+<div class="mesa">
+  <section class="columna-bandeja" aria-labelledby="t-bandeja">
+    <div class="titulo-columna">
+      <h2 id="t-bandeja">Bandeja simulada</h2>
+      <span class="suave cifra">{{ casos().length }} casos</span>
+    </div>
+
+    @if (errorBandeja()) {
+      <p class="aviso error">{{ errorBandeja() }}</p>
+    }
+
+    <ul class="bandeja">
+      @for (c of casos(); track c.id) {
+        <li>
+          <button type="button" class="caso" [class.activo]="c.id === activoId()" [attr.aria-pressed]="c.id === activoId()" (click)="elegir(c.id!)">
+            <span class="canal" [title]="c.canal">
+              @if (c.canal === 'Correo') {
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="m4 7 8 6 8-6" /></svg>
+              } @else {
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2" /><path d="M8 20h8M12 16.5V20" /></svg>
+              }
+              <span class="visualmente-oculto">{{ c.canal }}</span>
+            </span>
+            <span class="cuerpo">
+              <span class="linea">
+                <strong class="remitente">{{ c.remitente.nombre }}</strong>
+                <time class="suave cifra">{{ hace(c.creado) }}</time>
+              </span>
+              @if (c.remitente.empresa) {
+                <span class="empresa suave">{{ c.remitente.empresa }}</span>
+              }
+              <span class="asunto">{{ c.asunto }}</span>
+              @if (resultados()[c.id!]; as r) {
+                <span class="pildoras">
+                  @if (r.decision.destino !== 'tutela') {
+                    <span class="pildora" [class]="'pildora ' + clasePrioridad(r.decision.prioridad)">{{ r.decision.prioridad }}</span>
+                  }
+                  <span class="pildora" [class]="'pildora ' + claseDestino(r.decision.destino)">{{ etiquetaDestino(r.decision.destino) }}</span>
+                  @if (enrutados()[c.id!]; as e) {
+                    <span class="chip cifra">{{ e.radicado }}</span>
+                  }
+                </span>
+              } @else if (clasificandoId() === c.id) {
+                <span class="clasificando">Clasificando…</span>
+              }
+            </span>
+          </button>
+        </li>
+      }
+    </ul>
+
+    @if (formularioAbierto()) {
+      <app-formulario-caso (agregado)="agregarCaso($event)" (cancelado)="formularioAbierto.set(false)" />
+    } @else {
+      <button type="button" class="boton secundario escribir" (click)="formularioAbierto.set(true)">Escribir un caso</button>
+    }
+
+    @if (caso(); as c) {
+      <article class="detalle tarjeta" aria-labelledby="t-detalle">
+        <span class="eyebrow">Caso {{ c.id }}</span>
+        <h3 id="t-detalle">{{ c.asunto }}</h3>
+        <p class="meta suave">
+          {{ c.remitente.nombre }}{{ c.remitente.empresa ? ' · ' + c.remitente.empresa : '' }} · {{ c.remitente.correo }}<br />
+          {{ c.canal }}{{ c.buzon ? ' a ' + c.buzon : '' }}
+        </p>
+        <p class="mensaje">{{ c.descripcion }}</p>
+        @if (c.activoDeclarado || c.localDeclarado) {
+          <p class="declarados">
+            <span class="eyebrow">El cliente declaró</span>
+            @if (c.activoDeclarado) { <span class="chip">Activo: {{ c.activoDeclarado }}</span> }
+            @if (c.localDeclarado) { <span class="chip">Local: {{ c.localDeclarado }}</span> }
+          </p>
+        }
+        @if (esperado(); as e) {
+          <p class="declarados esperado">
+            <span class="eyebrow">Etiqueta de evaluación</span>
+            <span class="chip">{{ e.motivo ?? 'Sin tipología' }}</span>
+            <span class="chip">{{ e.area ?? 'Sin área' }}</span>
+            @if (e.esTutela) { <span class="chip">Tutela</span> }
+          </p>
+        }
+      </article>
+    }
+  </section>
+
+  <section class="panel" aria-labelledby="t-panel">
+    <h2 id="t-panel" class="visualmente-oculto">Panel de decisión</h2>
+    <header class="proveedor-fila tarjeta">
+      @if (proveedores.actual(); as p) {
+        <div class="proveedor">
+          <span class="eyebrow">Panel de decisión</span>
+          <strong>{{ p.nombre }}</strong>
+          <span class="suave modelo">{{ resultado()?.proveedor?.modelo ?? p.modelo }} · <span class="insignia-proveedor">{{ insignia(p) }}</span></span>
+        </div>
+      } @else {
+        <div class="proveedor"><span class="eyebrow">Panel de decisión</span><strong>Sin proveedor disponible</strong></div>
+      }
+      @if (resultado(); as r) {
+        <dl class="metricas cifra">
+          <div><dt>Latencia</dt><dd>{{ ms(r.metricas.latenciaMs) }}</dd></div>
+          <div><dt>Llamadas</dt><dd>{{ r.metricas.llamadas }}</dd></div>
+          <div><dt>Costo</dt><dd>{{ usd(r.metricas.costoUsd) }}</dd></div>
+        </dl>
+      }
+    </header>
+
+    <div class="tarjeta pasos-tarjeta">
+      <app-pasos-triage [actual]="paso()" />
+      <div class="acciones-principales">
+        <button type="button" class="boton" [disabled]="!puedeClasificar()" (click)="clasificar()">
+          {{ clasificandoId() ? 'Clasificando…' : 'Clasificar con ' + nombreProveedor() }}
+        </button>
+        <button type="button" class="boton secundario" [disabled]="!caso() || comparando() || !!clasificandoId()" (click)="comparar()">
+          {{ comparando() ? 'Comparando…' : 'Comparar proveedores' }}
+        </button>
+      </div>
+      <p class="estado suave" aria-live="polite">{{ estado() }}</p>
+    </div>
+
+    @if (error()) {
+      <p class="aviso error" role="alert">{{ error() }}</p>
+    }
+    @if (proveedores.error()) {
+      <p class="aviso error" role="alert">{{ proveedores.error() }}</p>
+    }
+
+    @if (comparacion(); as filas) {
+      <section class="tarjeta comparacion" aria-labelledby="t-comparar">
+        <h3 id="t-comparar">El mismo caso con cada proveedor</h3>
+        <div class="contenedor-tabla">
+          <table class="tabla">
+            <thead><tr><th>Proveedor</th><th>Destino</th><th>Tipología</th><th>Prioridad</th><th>Tutela</th><th>Latencia</th><th>Costo</th></tr></thead>
+            <tbody>
+              @for (f of filas; track f.proveedor) {
+                <tr>
+                  <td>{{ f.proveedor }}</td>
+                  @if (f.error) {
+                    <td colspan="6" class="falla">{{ f.error }}</td>
+                  } @else {
+                    <td><span class="pildora" [class]="'pildora ' + claseDestino(f.destino)">{{ etiquetaDestino(f.destino!) }}</span></td>
+                    <td>{{ f.motivo ?? '—' }}</td>
+                    <td><span class="pildora" [class]="'pildora ' + clasePrioridad(f.prioridad)">{{ f.prioridad }}</span></td>
+                    <td class="cifra">{{ pct(f.tutela) }}</td>
+                    <td class="cifra">{{ ms(f.latenciaMs ?? 0) }}</td>
+                    <td class="cifra">{{ usd(f.costoUsd ?? 0) }}</td>
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+    }
+
+    @if (resultado(); as r) {
+      <div class="titulo-juicios">
+        <h2>Una solicitud · ocho juicios</h2>
+        <p class="suave">Cada tarjeta es una pregunta tipada. La línea punteada es el corte que aplica el código, no la IA.</p>
+      </div>
+      <div class="juicios">
+        @for (j of juicios(); track j.pregunta.id) {
+          <app-tarjeta-juicio [pregunta]="j.pregunta" [respuesta]="j.respuesta" [corte]="j.corte" [tipoProveedor]="r.proveedor.tipo" />
+        }
+      </div>
+
+      <section class="tarjeta extraidos" aria-labelledby="t-extraidos">
+        <h3 id="t-extraidos">Datos extraídos</h3>
+        @if (extraidos().length) {
+          <div class="grupos-extraidos">
+            @for (g of extraidos(); track g.etiqueta) {
+              <div>
+                <span class="eyebrow">{{ g.etiqueta }}</span>
+                <span class="chips">@for (v of g.valores; track v) { <span class="chip cifra">{{ v }}</span> }</span>
+              </div>
+            }
+          </div>
+        } @else {
+          <p class="suave">El texto no trae NIT, facturas, locales ni radicados.</p>
+        }
+        <p class="nota suave">Extraídos con reglas: el modelo de decisión no extrae texto.</p>
+      </section>
+
+      <app-tarjeta-decision [decision]="r.decision" [corregida]="!!corregidos()[activoId()!]" />
+
+      @if (corrigiendo()) {
+        <section class="tarjeta correccion" aria-labelledby="t-corregir">
+          <h3 id="t-corregir">Corregir la tipología</h3>
+          <p class="suave">El código recalcula área, responsable, ANS y correos con la tipología que elijas.</p>
+          <label class="campo">Tipología
+            <select [value]="motivoCorreccion()" (change)="motivoCorreccion.set($any($event.target).value)">
+              <option value="" disabled>Elige una tipología</option>
+              @for (m of motivos(); track m.area + m.grupo + m.motivo.nombre) {
+                <option [value]="m.motivo.nombre" [selected]="m.motivo.nombre === motivoCorreccion()">{{ m.area }} › {{ m.grupo }} › {{ m.motivo.nombre }} ({{ m.motivo.prioridad }})</option>
+              }
+            </select>
+          </label>
+          <div class="fila-botones">
+            <button type="button" class="boton secundario" (click)="corrigiendo.set(false)">Cancelar</button>
+            <button type="button" class="boton" [disabled]="!motivoCorreccion()" (click)="aplicarCorreccion()">Recalcular con esta tipología</button>
+          </div>
+        </section>
+      }
+
+      <section class="correos" aria-labelledby="t-correos">
+        <h3 id="t-correos">{{ enrutado() ? 'Correos guardados' : 'Correos propuestos' }} <span class="suave cifra">({{ r.decision.correos.length }})</span></h3>
+        @for (c of enrutado()?.correos ?? r.decision.correos; track c.tipo + c.asunto) {
+          <app-vista-correo [correo]="c" />
+        } @empty {
+          <p class="suave">Sin correos para este destino.</p>
+        }
+      </section>
+
+      @if (enrutado(); as e) {
+        <p class="aviso exito" role="status">
+          Radicado <strong class="cifra">{{ e.radicado }}</strong>. Correos guardados en la bandeja de salida simulada (no se envió nada).
+        </p>
+      }
+
+      <div class="fila-botones acciones-finales">
+        <button type="button" class="boton" [disabled]="enrutando() || !!enrutado()" (click)="enrutar()">
+          {{ enrutado() ? 'Enrutado' : enrutando() ? 'Enrutando…' : 'Aprobar y enrutar' }}
+        </button>
+        <button type="button" class="boton secundario" [disabled]="!!enrutado()" (click)="abrirCorreccion()">Corregir</button>
+      </div>
+
+      <details class="crudo">
+        <summary>Ver solicitud y respuesta</summary>
+        <pre>{{ r.crudo | json }}</pre>
+      </details>
+    } @else if (!clasificandoId()) {
+      <div class="vacio tarjeta">
+        <p><strong>Elige un caso de la bandeja y pulsa «Clasificar».</strong></p>
+        <p class="suave">Verás las ocho preguntas que responde el modelo, sus probabilidades y lo que el código decide con ellas.</p>
+      </div>
+    }
+
+    @if (catalogo.catalogo(); as cat) {
+      <p class="regla-pie">
+        Tutela ≥ {{ pct(cat.umbrales.tutela) }} → Jurídica con ANS de {{ cat.ansTutelaDias }} días hábiles.
+        Si ninguna tipología encaja (&lt; {{ pct(cat.umbrales.encajaCatalogo) }}) o la confianza de la tipología es
+        &lt; {{ pct(cat.umbrales.confianzaTipologia) }}, el caso va a la mesa (Por clasificar).
+        La IA puede subir la prioridad del catálogo, nunca bajarla.
+      </p>
+    }
+  </section>
+</div>

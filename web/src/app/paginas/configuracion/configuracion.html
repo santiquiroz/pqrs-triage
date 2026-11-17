@@ -1,0 +1,111 @@
+<section class="cabecera">
+  <span class="eyebrow">Parámetros que aplica el código</span>
+  <h1>Configuración de la mesa</h1>
+  <p class="suave">Todo lo que está aquí lo decide SuruWorks, no la IA. Los cambios viven en memoria mientras corre la demo.</p>
+</section>
+
+@if (catalogo.error() || error()) {
+  <p class="aviso error" role="alert">{{ catalogo.error() ?? error() }}</p>
+}
+
+@if (catalogo.catalogo(); as cat) {
+  <section class="tarjeta" aria-labelledby="t-areas">
+    <h2 id="t-areas">Correos de las áreas</h2>
+    <p class="suave">Reciben la notificación de cada PQRS asignada. Correo de la mesa: <strong>{{ cat.correoMesa }}</strong>.</p>
+    <div class="contenedor-tabla">
+      <table class="tabla">
+        <thead><tr><th>Área</th><th>Correo</th><th>Estado</th><th></th></tr></thead>
+        <tbody>
+          @for (a of cat.areas; track a.id) {
+            <tr>
+              <td>{{ a.nombre }}</td>
+              <td>
+                <label class="visualmente-oculto" [for]="'correo-' + a.id">Correo de {{ a.nombre }}</label>
+                <input class="entrada" [id]="'correo-' + a.id" type="email" [value]="correoDe(a)" (input)="escribirCorreo(a, $event)" [attr.aria-invalid]="!correoValido(a)" />
+                @if (!correoValido(a)) { <span class="error-campo">Correo no válido</span> }
+              </td>
+              <td><span class="chip">{{ a.validado ? 'Validado' : 'Por validar' }}</span></td>
+              <td class="accion">
+                <button type="button" class="boton secundario" [disabled]="!correoValido(a) || guardando() === a.id" (click)="guardarCorreo(a)">Guardar</button>
+                @if (avisos()[a.id]; as aviso) { <span class="suave aviso-fila">{{ aviso }}</span> }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="dos">
+    <section class="tarjeta" aria-labelledby="t-umbrales">
+      <h2 id="t-umbrales">Umbrales</h2>
+      <div class="deslizadores">
+        @for (d of deslizadores; track d.clave) {
+          <label class="deslizador">
+            <span class="fila"><strong>{{ d.nombre }}</strong><span class="cifra valor">{{ textoUmbral(d) }}</span></span>
+            <input type="range" min="0" [max]="d.maximo" [step]="d.paso" [value]="valorUmbral(d.clave)" (input)="moverUmbral(d.clave, $event)" />
+            <span class="suave efecto">{{ d.efecto }}</span>
+          </label>
+        }
+      </div>
+      <button type="button" class="boton" (click)="guardarUmbrales()">Guardar umbrales</button>
+      @if (avisoUmbrales()) { <p class="aviso info" role="status">{{ avisoUmbrales() }}</p> }
+    </section>
+
+    <section class="tarjeta" aria-labelledby="t-ans">
+      <h2 id="t-ans">ANS</h2>
+      <table class="tabla">
+        <thead><tr><th>Prioridad</th><th>Plazo</th></tr></thead>
+        <tbody>
+          @for (p of ans(); track p[0]) {
+            <tr><td>{{ p[0] }}</td><td class="cifra">{{ plazo(p[1], cat.tipoDias) }}</td></tr>
+          }
+          <tr><td>Tutela</td><td class="cifra">{{ plazo(cat.ansTutelaDias, cat.tipoDias) }}</td></tr>
+          <tr><td>Derecho de petición</td><td class="cifra">máximo {{ plazo(cat.ansDerechoPeticionDias, cat.tipoDias) }}</td></tr>
+        </tbody>
+      </table>
+      <h3>Próximos festivos</h3>
+      <ul class="festivos">
+        @for (f of festivos(); track f) { <li class="cifra">{{ dia(f + 'T12:00:00-05:00') }}</li> }
+      </ul>
+    </section>
+  </div>
+
+  <section class="tarjeta" aria-labelledby="t-catalogo">
+    <h2 id="t-catalogo">Catálogo</h2>
+    <div class="arbol">
+      @for (a of cat.areas; track a.id) {
+        <details>
+          <summary><strong>{{ a.nombre }}</strong> <span class="suave">· {{ a.grupos.length }} {{ a.grupos.length === 1 ? 'grupo' : 'grupos' }}</span></summary>
+          @for (g of a.grupos; track g.nombre) {
+            <div class="grupo">
+              <p class="nombre-grupo"><strong>{{ g.nombre }}</strong> <span class="suave">· responsable {{ usuario(g.responsable) }} · suplente {{ usuario(g.suplente) }}</span></p>
+              <ul>
+                @for (m of g.motivos; track m.nombre) {
+                  <li><span>{{ m.nombre }}</span> <span class="chip">{{ m.prioridad }}</span> @if (!m.publico) { <span class="chip">Interno</span> }</li>
+                }
+              </ul>
+            </div>
+          }
+        </details>
+      }
+    </div>
+  </section>
+}
+
+<section class="tarjeta" aria-labelledby="t-salida">
+  <div class="titulo">
+    <h2 id="t-salida">Bandeja de salida simulada</h2>
+    <button type="button" class="boton fantasma" (click)="cargarCorreos()">Actualizar</button>
+  </div>
+  <ul class="salida">
+    @for (c of correos(); track c.id) {
+      <li>
+        <p class="meta-correo suave"><span class="cifra radicado">{{ c.radicado }}</span> · <time class="cifra">{{ fecha(c.enviadoEn) }}</time></p>
+        <app-vista-correo [correo]="c" />
+      </li>
+    } @empty {
+      <li class="suave">Aún no hay correos. Aprueba y enruta un caso en «Triage en vivo».</li>
+    }
+  </ul>
+</section>

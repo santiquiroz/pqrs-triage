@@ -1,0 +1,83 @@
+<section class="cabecera">
+  <span class="eyebrow">Cómo funciona</span>
+  <h1>La IA juzga. El código decide.</h1>
+  <p class="suave">El modelo solo responde ocho preguntas con probabilidades. Áreas, responsables, ANS y correos salen de reglas de SuruWorks escritas en código, que se pueden auditar y probar.</p>
+</section>
+
+<figure class="tarjeta diagrama">
+  <div class="lienzo">
+    <svg viewBox="0 0 1120 250" role="img" aria-labelledby="diagrama-titulo diagrama-desc">
+      <title id="diagrama-titulo">Flujo del triage de una PQRS</title>
+      <desc id="diagrama-desc">El caso pasa a ocho preguntas tipadas, el modelo de decisión devuelve probabilidades y las reglas de SuruWorks en código deciden destino, ANS y correos.</desc>
+      <defs>
+        <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 10 5 0 10z" class="punta" />
+        </marker>
+      </defs>
+      <rect x="10" y="20" width="560" height="210" rx="14" class="zona-ia" />
+      <text x="28" y="46" class="zona-titulo">La IA juzga</text>
+      <rect x="590" y="20" width="520" height="210" rx="14" class="zona-codigo" />
+      <text x="608" y="46" class="zona-titulo claro">El código de SuruWorks decide</text>
+
+      <g class="caja"><rect x="30" y="92" width="110" height="74" rx="8" /><text x="85" y="124">Caso</text><text x="85" y="144" class="sub">correo o portal</text></g>
+      <g class="caja"><rect x="170" y="92" width="120" height="74" rx="8" /><text x="230" y="124">8 preguntas</text><text x="230" y="144" class="sub">tipadas</text></g>
+      <g class="caja destacada"><rect x="320" y="80" width="130" height="98" rx="8" /><text x="385" y="112">Modelo de</text><text x="385" y="130">decisión</text><text x="385" y="152" class="sub">Jev · Tev1 · LLM</text><text x="385" y="168" class="sub">o reglas</text></g>
+      <g class="caja"><rect x="470" y="92" width="88" height="74" rx="8" /><text x="514" y="124">p = 0,93</text><text x="514" y="144" class="sub">probabilidades</text></g>
+
+      <g class="caja codigo"><rect x="612" y="70" width="300" height="118" rx="8" /><text x="762" y="100">Reglas en código</text>
+        <text x="762" y="124" class="sub claro">tutela ≥ 50 % → Jurídica</text>
+        <text x="762" y="142" class="sub claro">tipología &lt; 55 % → mesa</text>
+        <text x="762" y="160" class="sub claro">responsable, ANS hábiles, correos</text>
+      </g>
+      <g class="caja codigo"><rect x="940" y="92" width="150" height="74" rx="8" /><text x="1015" y="124">Radicado</text><text x="1015" y="144" class="sub claro">y correos</text></g>
+
+      <path d="M140 129 H164" class="linea" marker-end="url(#flecha)" />
+      <path d="M290 129 H314" class="linea" marker-end="url(#flecha)" />
+      <path d="M450 129 H464" class="linea" marker-end="url(#flecha)" />
+      <path d="M558 129 H606" class="linea fuerte" marker-end="url(#flecha)" />
+      <path d="M912 129 H934" class="linea clara" marker-end="url(#flecha)" />
+    </svg>
+  </div>
+  <figcaption class="suave">La frontera es la flecha gruesa: lo que cruza son números, no decisiones.</figcaption>
+</figure>
+
+<section class="tarjeta" aria-labelledby="t-preguntas">
+  <h2 id="t-preguntas">Las ocho preguntas</h2>
+  <div class="contenedor-tabla">
+    <table class="tabla">
+      <thead><tr><th>Pregunta</th><th>Tipo</th><th>Para qué la usa el código</th></tr></thead>
+      <tbody>
+        @for (p of preguntas; track p.id) {
+          <tr>
+            <td><strong>{{ p.pregunta }}</strong><br /><code>{{ p.id }}</code></td>
+            <td><span class="insignia" [class]="'insignia t-' + p.tipo">{{ nombresTipo[p.tipo] }}</span></td>
+            <td>{{ p.uso }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="proveedores" aria-labelledby="t-proveedores">
+  <h2 id="t-proveedores">Los proveedores y qué datos salen de SuruWorks</h2>
+  <div class="rejilla">
+    @for (p of proveedores; track p.nombre) {
+      <article class="tarjeta">
+        <h3>{{ p.nombre }}</h3>
+        <p>{{ p.donde }}</p>
+        <p class="datos"><span class="eyebrow">Datos</span>{{ p.datos }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="tarjeta por-que" aria-labelledby="t-por-que">
+  <h2 id="t-por-que">Por qué el código manda</h2>
+  <ul>
+    <li>La IA nunca asigna ANS, responsables ni destinatarios: si se equivoca, el error queda en una probabilidad visible, no en un correo enviado.</li>
+    <li>Los umbrales se cambian en Configuración sin reentrenar nada; cada decisión lista las reglas que se aplicaron.</li>
+    <li>Cambiar de proveedor (Jev, Tev1, un LLM o reglas) no cambia el flujo: todos responden las mismas preguntas.</li>
+    <li>Una persona puede corregir la tipología y el código recalcula área, ANS y correos.</li>
+  </ul>
+</section>

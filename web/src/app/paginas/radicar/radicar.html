@@ -1,0 +1,94 @@
+<section class="cabecera">
+  <span class="eyebrow">Propuesta para el sitio de PQRS</span>
+  <h1>Cuéntanos qué pasó. Nosotros lo clasificamos.</h1>
+  <p class="suave">El cliente elige el tipo de solicitud y cuenta qué pasó. La IA elige la tipología, el activo y la prioridad; si no está segura, el caso va a la mesa. Si cree que el tipo no es el correcto, deja una nota para el equipo.</p>
+</section>
+
+@if (radicado(); as r) {
+  <section class="confirmacion tarjeta" role="status">
+    <span class="eyebrow">Solicitud radicada</span>
+    <h2 class="cifra">{{ r.radicado }}</h2>
+    @if (decision(); as d) {
+      <p>Te responderemos a más tardar el <strong>{{ fecha(d.venceEn) }}</strong> ({{ plazo(d.ansDias, d.tipoDias) }}).</p>
+    }
+    @if (acuse(); as a) {
+      <p class="suave">Este es el acuse que recibirás en tu correo:</p>
+      <app-vista-correo [correo]="a" />
+    } @else {
+      <p class="suave">El caso pasó directo al equipo jurídico; el acuse lo envía una persona.</p>
+    }
+    <button type="button" class="boton secundario" (click)="otraSolicitud()">Radicar otra solicitud</button>
+  </section>
+} @else {
+  <div class="rejilla">
+    <form class="tarjeta formulario" [formGroup]="form" (ngSubmit)="radicar()" novalidate>
+      <label class="campo">Nombre
+        <input formControlName="nombre" autocomplete="name" />
+        @if (invalido('nombre')) { <span class="error-campo">Escribe tu nombre.</span> }
+      </label>
+      <label class="campo">Correo
+        <input formControlName="correo" type="email" autocomplete="email" />
+        @if (invalido('correo')) { <span class="error-campo">Escribe un correo válido.</span> }
+      </label>
+      <label class="campo">Empresa (opcional)
+        <input formControlName="empresa" autocomplete="organization" />
+      </label>
+      <label class="campo">Tipo de solicitud
+        <select formControlName="tipo">
+          <option value="" disabled>Elige el tipo</option>
+          @for (t of tipos(); track t.id) { <option [value]="t.id">{{ t.id }}</option> }
+        </select>
+        @if (ayudaTipo()) { <span class="suave ayuda">{{ ayudaTipo() }}</span> }
+        @if (invalido('tipo')) { <span class="error-campo">Elige el tipo de solicitud.</span> }
+      </label>
+      <label class="campo">Cuéntanos qué pasó
+        <textarea formControlName="mensaje" rows="8" placeholder="Ej.: En la factura de octubre del local 112 de Centro Comercial Arrayanes me cobraron dos veces la administración…"></textarea>
+        @if (invalido('mensaje')) { <span class="error-campo">Cuéntanos un poco más (al menos 40 caracteres).</span> }
+      </label>
+      <button type="submit" class="boton" [disabled]="radicando()">{{ radicando() ? 'Radicando…' : 'Radicar' }}</button>
+    </form>
+
+    <aside class="entendimos tarjeta" aria-live="polite" aria-labelledby="t-entendimos">
+      <span class="eyebrow">Vista interna · el cliente no la ve</span>
+      <h2 id="t-entendimos">Así lo recibe SuruWorks</h2>
+      @if (error()) {
+        <p class="aviso error">{{ error() }}</p>
+      }
+      @if (pensando()) {
+        <p class="suave">La IA está leyendo el caso…</p>
+      } @else if (decision(); as d) {
+        <dl>
+          <div><dt>Va para</dt><dd>{{ d.destinoTexto }}</dd></div>
+          <div>
+            <dt>Tipología · la eligió la IA</dt>
+            <dd>{{ d.motivo ?? 'Por clasificar' }} @if (confianzaTipologia() !== null) { <span class="suave cifra">({{ pct(confianzaTipologia()!) }})</span> }</dd>
+          </div>
+          <div><dt>Tipo · lo eligió el cliente</dt><dd>{{ d.tipo ?? 'Sin tipo' }}</dd></div>
+          <div><dt>Activo</dt><dd><span class="chip">{{ d.activo ?? 'No identificado' }}</span></dd></div>
+          <div><dt>Prioridad</dt><dd><span class="pildora" [class]="'pildora ' + clasePrioridad(d.prioridad)">{{ d.prioridad }}</span></dd></div>
+          <div><dt>Respuesta</dt><dd class="cifra">a más tardar {{ fecha(d.venceEn) }}</dd></div>
+        </dl>
+        @if (d.notas.length) {
+          <div class="nota" role="note">
+            <strong>Nota de la IA para el equipo</strong>
+            <ul>
+              @for (n of d.notas; track n) { <li>{{ n }}</li> }
+            </ul>
+          </div>
+        }
+        <ul class="senales">
+          @for (s of senales(); track s.etiqueta) {
+            <li [class.activa]="s.activa">{{ s.etiqueta }}: <span class="cifra">{{ pct(s.p) }}</span></li>
+          }
+        </ul>
+      } @else {
+        <p class="suave">Elige el tipo y escribe al menos 40 caracteres: aquí verás qué tipología eligió la IA y a quién le llega el caso.</p>
+      }
+    </aside>
+  </div>
+
+  <section class="antes-ahora" aria-label="Comparación con el formulario actual">
+    <div><span class="eyebrow">Antes</span><p><strong class="cifra">12 campos</strong> en el mockup, entre ellos categoría y tipología: el cliente tenía que encontrar la suya entre 38.</p></div>
+    <div><span class="eyebrow">Ahora</span><p><strong class="cifra">5 campos</strong>. El cliente elige el tipo y cuenta qué pasó; la IA elige la tipología, saca las tutelas hacia Jurídica y manda a la mesa lo que no tiene claro.</p></div>
+  </section>
+}

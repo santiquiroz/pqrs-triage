@@ -1,0 +1,529 @@
+{
+ "version": 1,
+ "tipoDias": "habiles",
+ "alertaPct": 80,
+ "cierreAutoDias": 30,
+ "prioridades": {
+  "Urgente": 5,
+  "Alta": 6,
+  "Media": 8,
+  "Baja": 10
+ },
+ "tipos": [
+  {
+   "id": "Petición",
+   "desc": "Solicitas un trámite, documento o información."
+  },
+  {
+   "id": "Queja",
+   "desc": "Algo en la atención o el servicio no estuvo bien."
+  },
+  {
+   "id": "Reclamo",
+   "desc": "Un cobro, factura o compromiso no se cumplió como debía."
+  },
+  {
+   "id": "Sugerencia",
+   "desc": "Una idea para mejorar."
+  },
+  {
+   "id": "Felicitación",
+   "desc": "Reconoces algo que se hizo bien."
+  }
+ ],
+ "areas": [
+  {
+   "id": "rentas",
+   "nombre": "Rentas",
+   "correo": "rentas@suruworks.example",
+   "validado": true,
+   "grupos": [
+    {
+     "nombre": "Administración contratos actuales",
+     "motivos": [
+      {
+       "nombre": "Activación salida anticipada",
+       "prioridad": "Alta",
+       "nombreCliente": "Entregar el espacio antes de terminar el contrato",
+       "publico": true
+      },
+      {
+       "nombre": "Activación de la cesión",
+       "prioridad": "Media",
+       "nombreCliente": "Ceder el contrato a otra empresa",
+       "publico": true
+      },
+      {
+       "nombre": "Activación de Otrosí en trámite",
+       "prioridad": "Alta",
+       "nombreCliente": "Seguimiento a un otrosí en trámite",
+       "publico": true
+      },
+      {
+       "nombre": "Dación en pago",
+       "prioridad": "Baja",
+       "nombreCliente": "Pagar con bienes o servicios (dación en pago)",
+       "publico": true
+      },
+      {
+       "nombre": "Solicitud de no prorroga de contrato",
+       "prioridad": "Media",
+       "nombreCliente": "No prorrogar el contrato",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Mi contrato",
+     "responsable": "r-mateo",
+     "suplente": "r-juliana"
+    },
+    {
+     "nombre": "Proceso Facturación",
+     "motivos": [
+      {
+       "nombre": "Anticipos",
+       "prioridad": "Urgente",
+       "nombreCliente": "Factura de anticipo",
+       "publico": true
+      },
+      {
+       "nombre": "Facturación con Orden de Compra",
+       "prioridad": "Urgente",
+       "nombreCliente": "Facturar con orden de compra",
+       "publico": true
+      },
+      {
+       "nombre": "Facturación parqueaderos",
+       "prioridad": "Alta",
+       "nombreCliente": "Factura de parqueaderos",
+       "publico": true
+      },
+      {
+       "nombre": "Facturación por recaudo de eventos",
+       "prioridad": "Media",
+       "nombreCliente": "Factura por eventos",
+       "publico": true
+      },
+      {
+       "nombre": "Solicitud facturación",
+       "prioridad": "Alta",
+       "nombreCliente": "Solicitar una factura",
+       "publico": true
+      },
+      {
+       "nombre": "Solicitud reembolsos",
+       "prioridad": "Alta",
+       "nombreCliente": "Solicitar un reembolso",
+       "publico": true
+      },
+      {
+       "nombre": "Corrección facturación",
+       "prioridad": "Urgente",
+       "nombreCliente": "Corregir una factura",
+       "publico": true
+      },
+      {
+       "nombre": "Facturación rechazada",
+       "prioridad": "Urgente",
+       "nombreCliente": "Factura rechazada",
+       "publico": true
+      },
+      {
+       "nombre": "Inquietud sobre facturación",
+       "prioridad": "Alta",
+       "nombreCliente": "Duda sobre una factura",
+       "publico": true
+      },
+      {
+       "nombre": "Inquietudes cliente interno",
+       "prioridad": "Alta",
+       "nombreCliente": "Inquietudes cliente interno",
+       "publico": false
+      },
+      {
+       "nombre": "Soporte entrega de facturación",
+       "prioridad": "Urgente",
+       "nombreCliente": "No recibí la factura",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Facturación",
+     "responsable": "r-juliana",
+     "suplente": "r-mateo"
+    },
+    {
+     "nombre": "Actualización datos del cliente",
+     "motivos": [
+      {
+       "nombre": "Actualización correo facturación",
+       "prioridad": "Urgente",
+       "nombreCliente": "Cambiar el correo de facturación",
+       "publico": true
+      },
+      {
+       "nombre": "Actualización datos deudores",
+       "prioridad": "Media",
+       "nombreCliente": "Actualizar datos de deudores o codeudores",
+       "publico": true
+      },
+      {
+       "nombre": "Solicitud de creacion de deudores",
+       "prioridad": "Alta",
+       "nombreCliente": "Solicitud de creacion de deudores",
+       "publico": false
+      }
+     ],
+     "nombreCliente": "Actualizar mis datos",
+     "responsable": "r-juliana",
+     "suplente": "r-mateo"
+    },
+    {
+     "nombre": "Actualización datos Maestros",
+     "motivos": [
+      {
+       "nombre": "Solicitud de creacion o modificacion de propiedades",
+       "prioridad": "Alta",
+       "nombreCliente": "Solicitud de creacion o modificacion de propiedades",
+       "publico": false
+      }
+     ],
+     "nombreCliente": "Datos maestros",
+     "responsable": null,
+     "suplente": null
+    }
+   ]
+  },
+  {
+   "id": "operacion",
+   "nombre": "Operación y mantenimiento",
+   "correo": "operaciones@suruworks.example",
+   "validado": false,
+   "grupos": [
+    {
+     "nombre": "Mantenimiento",
+     "motivos": [
+      {
+       "nombre": "Daño en zonas comunes",
+       "prioridad": "Alta",
+       "nombreCliente": "Daño en zonas comunes",
+       "publico": true
+      },
+      {
+       "nombre": "Mantenimiento correctivo en el espacio",
+       "prioridad": "Media",
+       "nombreCliente": "Mantenimiento correctivo en el espacio",
+       "publico": true
+      },
+      {
+       "nombre": "Aire acondicionado y ventilación",
+       "prioridad": "Alta",
+       "nombreCliente": "Aire acondicionado y ventilación",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Mantenimiento del espacio",
+     "responsable": "r-felipe",
+     "suplente": null
+    },
+    {
+     "nombre": "Seguridad, aseo y parqueaderos",
+     "motivos": [
+      {
+       "nombre": "Novedad de seguridad",
+       "prioridad": "Urgente",
+       "nombreCliente": "Novedad de seguridad",
+       "publico": true
+      },
+      {
+       "nombre": "Aseo de zonas comunes",
+       "prioridad": "Baja",
+       "nombreCliente": "Aseo de zonas comunes",
+       "publico": true
+      },
+      {
+       "nombre": "Acceso y tarjetas de parqueadero",
+       "prioridad": "Media",
+       "nombreCliente": "Acceso y tarjetas de parqueadero",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Seguridad, aseo y parqueaderos",
+     "responsable": "r-felipe",
+     "suplente": null
+    }
+   ]
+  },
+  {
+   "id": "cartera",
+   "nombre": "Cartera y recaudo",
+   "correo": "cartera@suruworks.example",
+   "validado": false,
+   "grupos": [
+    {
+     "nombre": "Cuenta del cliente",
+     "motivos": [
+      {
+       "nombre": "Estado de cuenta",
+       "prioridad": "Media",
+       "nombreCliente": "Estado de cuenta",
+       "publico": true
+      },
+      {
+       "nombre": "Aplicación de pagos",
+       "prioridad": "Alta",
+       "nombreCliente": "Aplicación de pagos",
+       "publico": true
+      },
+      {
+       "nombre": "Acuerdo de pago",
+       "prioridad": "Media",
+       "nombreCliente": "Acuerdo de pago",
+       "publico": true
+      },
+      {
+       "nombre": "Paz y salvo",
+       "prioridad": "Alta",
+       "nombreCliente": "Paz y salvo",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Pagos y estado de cuenta",
+     "responsable": "r-valentina",
+     "suplente": null
+    }
+   ]
+  },
+  {
+   "id": "comercial",
+   "nombre": "Comercial",
+   "correo": "comercial@suruworks.example",
+   "validado": false,
+   "grupos": [
+    {
+     "nombre": "Espacios y condiciones",
+     "motivos": [
+      {
+       "nombre": "Disponibilidad de espacios",
+       "prioridad": "Baja",
+       "nombreCliente": "Disponibilidad de espacios",
+       "publico": true
+      },
+      {
+       "nombre": "Renovación y condiciones del contrato",
+       "prioridad": "Media",
+       "nombreCliente": "Renovación y condiciones del contrato",
+       "publico": true
+      },
+      {
+       "nombre": "Eventos y activaciones en zonas comunes",
+       "prioridad": "Media",
+       "nombreCliente": "Eventos y activaciones en zonas comunes",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Espacios y condiciones comerciales",
+     "responsable": "r-camilo",
+     "suplente": null
+    }
+   ]
+  },
+  {
+   "id": "juridica",
+   "nombre": "Jurídica",
+   "correo": "juridica@suruworks.example",
+   "validado": false,
+   "grupos": [
+    {
+     "nombre": "Asuntos legales",
+     "motivos": [
+      {
+       "nombre": "Acción de tutela",
+       "prioridad": "Urgente",
+       "nombreCliente": "Notificación de acción de tutela",
+       "publico": false
+      },
+      {
+       "nombre": "Requerimiento o notificación legal",
+       "prioridad": "Urgente",
+       "nombreCliente": "Requerimiento o notificación legal",
+       "publico": true
+      },
+      {
+       "nombre": "Certificación contractual",
+       "prioridad": "Media",
+       "nombreCliente": "Certificación contractual",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Asuntos legales",
+     "responsable": "r-natalia",
+     "suplente": null
+    }
+   ]
+  },
+  {
+   "id": "experiencia",
+   "nombre": "Experiencia del cliente",
+   "correo": "servicioalcliente@suruworks.example",
+   "validado": false,
+   "grupos": [
+    {
+     "nombre": "Voz del cliente",
+     "motivos": [
+      {
+       "nombre": "Sugerencias del servicio",
+       "prioridad": "Baja",
+       "nombreCliente": "Sugerencias del servicio",
+       "publico": true
+      },
+      {
+       "nombre": "Felicitaciones",
+       "prioridad": "Baja",
+       "nombreCliente": "Felicitaciones",
+       "publico": true
+      }
+     ],
+     "nombreCliente": "Sugerencias y felicitaciones",
+     "responsable": "r-sofia",
+     "suplente": null
+    }
+   ]
+  }
+ ],
+ "activos": [
+  {
+   "nombre": "Centro Comercial Arrayanes",
+   "producto": "Comercio"
+  },
+  {
+   "nombre": "Centro Comercial Los Almendros",
+   "producto": "Comercio"
+  },
+  {
+   "nombre": "Centro Comercial El Caracolí",
+   "producto": "Comercio"
+  },
+  {
+   "nombre": "Centro Comercial La Ceiba",
+   "producto": "Comercio"
+  },
+  {
+   "nombre": "Parque Logístico Occidente",
+   "producto": "Logística"
+  },
+  {
+   "nombre": "Bodegas El Rosal",
+   "producto": "Logística"
+  },
+  {
+   "nombre": "Torre Empresarial Guayacán",
+   "producto": "Oficinas"
+  },
+  {
+   "nombre": "Edificio Corporativo Nogal",
+   "producto": "Oficinas"
+  },
+  {
+   "nombre": "Hotel Puerta Aérea",
+   "producto": "Hoteles"
+  }
+ ],
+ "usuarios": [
+  {
+   "id": "g-daniela",
+   "nombre": "Daniela Ríos",
+   "rol": "gestor",
+   "cargo": "Gestora de mesa de PQRS"
+  },
+  {
+   "id": "r-juliana",
+   "nombre": "Juliana Ospina",
+   "rol": "resolutor",
+   "area": "rentas",
+   "cargo": "Analista de Rentas"
+  },
+  {
+   "id": "r-mateo",
+   "nombre": "Mateo Cardona",
+   "rol": "resolutor",
+   "area": "rentas",
+   "cargo": "Analista de Rentas"
+  },
+  {
+   "id": "r-felipe",
+   "nombre": "Felipe Arango",
+   "rol": "resolutor",
+   "area": "operacion",
+   "cargo": "Coordinador de mantenimiento"
+  },
+  {
+   "id": "r-valentina",
+   "nombre": "Valentina Zapata",
+   "rol": "resolutor",
+   "area": "cartera",
+   "cargo": "Analista de Cartera"
+  },
+  {
+   "id": "r-camilo",
+   "nombre": "Camilo Vélez",
+   "rol": "resolutor",
+   "area": "comercial",
+   "cargo": "Ejecutivo comercial"
+  },
+  {
+   "id": "r-natalia",
+   "nombre": "Natalia Serna",
+   "rol": "resolutor",
+   "area": "juridica",
+   "cargo": "Abogada"
+  },
+  {
+   "id": "r-sofia",
+   "nombre": "Sofía Henao",
+   "rol": "resolutor",
+   "area": "experiencia",
+   "cargo": "Analista de experiencia del cliente"
+  },
+  {
+   "id": "a-ti",
+   "nombre": "Administrador de la plataforma",
+   "rol": "admin",
+   "cargo": "Soluciones TI"
+  }
+ ],
+ "festivos": [
+  "2026-01-01",
+  "2026-01-12",
+  "2026-03-23",
+  "2026-04-02",
+  "2026-04-03",
+  "2026-05-01",
+  "2026-05-18",
+  "2026-06-08",
+  "2026-06-15",
+  "2026-06-29",
+  "2026-07-20",
+  "2026-08-07",
+  "2026-08-17",
+  "2026-10-12",
+  "2026-11-02",
+  "2026-11-16",
+  "2026-12-08",
+  "2026-12-25",
+  "2027-01-01",
+  "2027-01-11",
+  "2027-03-22",
+  "2027-03-25",
+  "2027-03-26"
+ ],
+ "correoMesa": "mesa-pqrs@suruworks.example",
+ "ansTutelaDias": 2,
+ "ansDerechoPeticionDias": 15,
+ "umbrales": {
+  "confianzaTipologia": 0.55,
+  "encajaCatalogo": 0.5,
+  "tutela": 0.5,
+  "derechoPeticion": 0.5,
+  "riesgoLegal": 0.6,
+  "urgenciaCritica": 2.5
+ }
+}

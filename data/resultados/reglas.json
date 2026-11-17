@@ -1,0 +1,3110 @@
+{
+  "resumenes": [
+    {
+      "proveedor": "reglas",
+      "total": 75,
+      "errores": 0,
+      "exactitudTipo": 0.8405797101449275,
+      "exactitudArea": 0.821917808219178,
+      "exactitudTipologia": 0.7671232876712328,
+      "exactitudActivo": 1,
+      "exactitudEnAutomaticos": 0.8846153846153846,
+      "tutela": {
+        "vp": 3,
+        "fn": 0,
+        "fp": 0,
+        "recall": 1,
+        "precision": 1
+      },
+      "porcentajeAutomatico": 0.6933333333333334,
+      "porcentajeGestor": 0.26666666666666666,
+      "porcentajeTutela": 0.04,
+      "latenciaP50Ms": 0,
+      "latenciaP95Ms": 1,
+      "costoUsdPorMil": 0
+    }
+  ],
+  "filas": [
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00001",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Corrección facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Arrayanes",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "motivo": "Corrección facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.6328379845933199
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 33,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00002",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Sugerencia",
+          "area": "experiencia",
+          "grupo": "Voz del cliente",
+          "motivo": "Sugerencias del servicio",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": "Baja"
+        },
+        "obtenido": {
+          "tipo": "Sugerencia",
+          "area": "experiencia",
+          "motivo": "Sugerencias del servicio",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.7087007113043814
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00003",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Facturación parqueaderos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Hotel Puerta Aérea",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Facturación parqueaderos",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Hotel Puerta Aérea",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9119868890025493
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00004",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Mantenimiento",
+          "motivo": "Daño en zonas comunes",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Parque Logístico Occidente",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación salida anticipada",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.02631578947368421
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00005",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Corrección facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "motivo": "Corrección facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial Los Almendros",
+          "destino": "automatica",
+          "confianzaTipologia": 0.6328379845933199
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00006",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "grupo": "Espacios y condiciones",
+          "motivo": "Eventos y activaciones en zonas comunes",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Eventos y activaciones en zonas comunes",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9998769075114414
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 5,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00007",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "grupo": "Espacios y condiciones",
+          "motivo": "Renovación y condiciones del contrato",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Renovación y condiciones del contrato",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial El Caracolí",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9985167776720806
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00008",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Facturación por recaudo de eventos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Facturación por recaudo de eventos",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9469820740083867
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00009",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Actualización datos del cliente",
+          "motivo": "Actualización correo facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Actualización correo facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial El Caracolí",
+          "destino": "automatica",
+          "confianzaTipologia": 0.661093999990044
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00010",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Seguridad, aseo y parqueaderos",
+          "motivo": "Novedad de seguridad",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Hotel Puerta Aérea",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "motivo": "Novedad de seguridad",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Hotel Puerta Aérea",
+          "destino": "automatica",
+          "confianzaTipologia": 0.960864255868653
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00011",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "grupo": "Asuntos legales",
+          "motivo": "Certificación contractual",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Hotel Puerta Aérea",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "motivo": "Certificación contractual",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Hotel Puerta Aérea",
+          "destino": "automatica",
+          "confianzaTipologia": 0.6308706312706134
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00012",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Dación en pago",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Baja"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Dación en pago",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9112743155419084
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00013",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Seguridad, aseo y parqueaderos",
+          "motivo": "Novedad de seguridad",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "motivo": "Novedad de seguridad",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9606769039377975
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00014",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "grupo": "Espacios y condiciones",
+          "motivo": "Eventos y activaciones en zonas comunes",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Bodegas El Rosal",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Eventos y activaciones en zonas comunes",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Bodegas El Rosal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9998769075114414
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00015",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Acuerdo de pago",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Acuerdo de pago",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9112743155419093
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00016",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Dación en pago",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Baja"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Dación en pago",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9116312660368472
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00017",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Anticipos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Parque Logístico Occidente",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Disponibilidad de espacios",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Parque Logístico Occidente",
+          "destino": "gestor",
+          "confianzaTipologia": 0.21853786403043757
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00018",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Paz y salvo",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Paz y salvo",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "gestor",
+          "confianzaTipologia": 0.41667988316630555
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00019",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Paz y salvo",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Paz y salvo",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.41667988316630555
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00020",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Activación salida anticipada",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Bodegas El Rosal",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación salida anticipada",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Bodegas El Rosal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9729770142675532
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00021",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Mantenimiento",
+          "motivo": "Aire acondicionado y ventilación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Hotel Puerta Aérea",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "motivo": "Aire acondicionado y ventilación",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Hotel Puerta Aérea",
+          "destino": "automatica",
+          "confianzaTipologia": 0.995454592320029
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00022",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Sugerencia",
+          "area": "experiencia",
+          "grupo": "Voz del cliente",
+          "motivo": "Felicitaciones",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Baja"
+        },
+        "obtenido": {
+          "tipo": "Felicitación",
+          "area": "comercial",
+          "motivo": "Disponibilidad de espacios",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "gestor",
+          "confianzaTipologia": 0.24123779086318872
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00023",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Aplicación de pagos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Aplicación de pagos",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9208534329965347
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00024",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Inquietudes cliente interno",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Inquietudes cliente interno",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9188604934001128
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00025",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Dación en pago",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Baja"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Dación en pago",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9116312660368472
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00026",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Inquietudes cliente interno",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Inquietudes cliente interno",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Centro Comercial Los Almendros",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9188604934001128
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00027",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Aplicación de pagos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Aplicación de pagos",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9208534329965347
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00028",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Solicitud reembolsos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Dación en pago",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "gestor",
+          "confianzaTipologia": 0.2950884116581639
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00029",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Activación de la cesión",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Parque Logístico Occidente",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación de la cesión",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Parque Logístico Occidente",
+          "destino": "automatica",
+          "confianzaTipologia": 0.8089697357127834
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00030",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Estado de cuenta",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Estado de cuenta",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial Los Almendros",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9468142254148675
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00031",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Acuerdo de pago",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Acuerdo de pago",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9112743155419093
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00032",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Actualización datos del cliente",
+          "motivo": "Actualización datos deudores",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Actualización datos deudores",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9887020716172904
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00033",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Activación de la cesión",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación de la cesión",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.8089697357127834
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00034",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Mantenimiento",
+          "motivo": "Daño en zonas comunes",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación salida anticipada",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.02631578947368421
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00035",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "grupo": "Asuntos legales",
+          "motivo": "Certificación contractual",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "motivo": "Certificación contractual",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial Los Almendros",
+          "destino": "automatica",
+          "confianzaTipologia": 0.6308706312706134
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00036",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Actualización datos del cliente",
+          "motivo": "Actualización correo facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Actualización correo facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.661093999990044
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00037",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Paz y salvo",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Arrayanes",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Paz y salvo",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.41667988316630555
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00038",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Facturación con Orden de Compra",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Parque Logístico Occidente",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Facturación con Orden de Compra",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Parque Logístico Occidente",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9877838040325423
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00039",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Activación de la cesión",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación de la cesión",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.8089697357127834
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00040",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Facturación rechazada",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Felicitación",
+          "area": "rentas",
+          "motivo": "Facturación rechazada",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9213820965017657
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00041",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Facturación rechazada",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Bodegas El Rosal",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Felicitación",
+          "area": "rentas",
+          "motivo": "Facturación rechazada",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.9213820965017657
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00042",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Administración contratos actuales",
+          "motivo": "Activación de la cesión",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación de la cesión",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.8089697357127834
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00043",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Aplicación de pagos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Aplicación de pagos",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9204892255107076
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00044",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Actualización datos Maestros",
+          "motivo": "Solicitud de creacion o modificacion de propiedades",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Bodegas El Rosal",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Solicitud de creacion o modificacion de propiedades",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Bodegas El Rosal",
+          "destino": "gestor",
+          "confianzaTipologia": 0.9998687271515471
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00045",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Mantenimiento",
+          "motivo": "Aire acondicionado y ventilación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Arrayanes",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "motivo": "Aire acondicionado y ventilación",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Centro Comercial Arrayanes",
+          "destino": "automatica",
+          "confianzaTipologia": 0.995454592320029
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00046",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Soporte entrega de facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Soporte entrega de facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial El Caracolí",
+          "destino": "automatica",
+          "confianzaTipologia": 0.8008929227792599
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00047",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Mantenimiento",
+          "motivo": "Aire acondicionado y ventilación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Hotel Puerta Aérea",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "motivo": "Aire acondicionado y ventilación",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.995454592320029
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00048",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Anticipos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Disponibilidad de espacios",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "gestor",
+          "confianzaTipologia": 0.21766876999111767
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00049",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Inquietudes cliente interno",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Inquietudes cliente interno",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9188604934001128
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00050",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": "Proceso Facturación",
+          "motivo": "Anticipos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": "Urgente"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Disponibilidad de espacios",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "gestor",
+          "confianzaTipologia": 0.21853786403043757
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00051",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Aplicación de pagos",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Aplicación de pagos",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9208534329965347
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00052",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": "Cuenta del cliente",
+          "motivo": "Estado de cuenta",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": "Media"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "motivo": "Estado de cuenta",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": null,
+          "destino": "automatica",
+          "confianzaTipologia": 0.9468142254148675
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "PQRS-2026-00053",
+        "conjunto": "mockup",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": "Mantenimiento",
+          "motivo": "Daño en zonas comunes",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": null,
+          "riesgoLegal": null,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": "Alta"
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación salida anticipada",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.02631578947368421
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": null,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-01",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": null,
+          "area": "juridica",
+          "grupo": null,
+          "motivo": "Acción de tutela",
+          "motivosAceptables": null,
+          "esTutela": true,
+          "derechoPeticion": false,
+          "riesgoLegal": true,
+          "destino": "tutela",
+          "activo": null,
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": null,
+          "area": "juridica",
+          "motivo": "Acción de tutela",
+          "prioridad": "Tutela",
+          "esTutela": true,
+          "activo": null,
+          "destino": "tutela",
+          "confianzaTipologia": 0.9824520871575658
+        },
+        "aciertos": {
+          "tipo": null,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": true
+        },
+        "latenciaMs": 2,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-02",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": null,
+          "area": "juridica",
+          "grupo": null,
+          "motivo": "Acción de tutela",
+          "motivosAceptables": null,
+          "esTutela": true,
+          "derechoPeticion": false,
+          "riesgoLegal": true,
+          "destino": "tutela",
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": null,
+          "area": "juridica",
+          "motivo": "Acción de tutela",
+          "prioridad": "Tutela",
+          "esTutela": true,
+          "activo": "Centro Comercial Los Almendros",
+          "destino": "tutela",
+          "confianzaTipologia": 0.9522776031167856
+        },
+        "aciertos": {
+          "tipo": null,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-03",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": null,
+          "area": "juridica",
+          "grupo": null,
+          "motivo": "Acción de tutela",
+          "motivosAceptables": null,
+          "esTutela": true,
+          "derechoPeticion": false,
+          "riesgoLegal": true,
+          "destino": "tutela",
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": null,
+          "area": "juridica",
+          "motivo": "Acción de tutela",
+          "prioridad": "Tutela",
+          "esTutela": true,
+          "activo": "Centro Comercial El Caracolí",
+          "destino": "tutela",
+          "confianzaTipologia": 0.8857549391632236
+        },
+        "aciertos": {
+          "tipo": null,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-04",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "grupo": null,
+          "motivo": "Corrección facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": true,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "motivo": "Facturación con Orden de Compra",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "gestor",
+          "confianzaTipologia": 0.10896529962783193
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-05",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "grupo": null,
+          "motivo": "Certificación contractual",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": true,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Centro Comercial Arrayanes",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "motivo": "Certificación contractual",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial Arrayanes",
+          "destino": "automatica",
+          "confianzaTipologia": 0.8639728246441882
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-06",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": null,
+          "motivo": "Novedad de seguridad",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": null,
+          "activo": "Centro Comercial Los Almendros",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "motivo": "Acceso y tarjetas de parqueadero",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial Los Almendros",
+          "destino": "automatica",
+          "confianzaTipologia": 0.597728569967424
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": true,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-07",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "grupo": null,
+          "motivo": "Mantenimiento correctivo en el espacio",
+          "motivosAceptables": [
+            "Mantenimiento correctivo en el espacio",
+            "Daño en zonas comunes"
+          ],
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": null,
+          "activo": "Parque Logístico Occidente",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "motivo": "Mantenimiento correctivo en el espacio",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Parque Logístico Occidente",
+          "destino": "automatica",
+          "confianzaTipologia": 0.817350339333676
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-08",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "grupo": null,
+          "motivo": "Corrección facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Reclamo",
+          "area": "rentas",
+          "motivo": "Corrección facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial El Caracolí",
+          "destino": "gestor",
+          "confianzaTipologia": 0.3909653585219941
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": false
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-09",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": null,
+          "motivo": "Facturación con Orden de Compra",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "motivo": "Requerimiento o notificación legal",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.6897926819928746
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-10",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "grupo": null,
+          "motivo": "Acceso y tarjetas de parqueadero",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Centro Comercial Arrayanes",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "operacion",
+          "motivo": "Acceso y tarjetas de parqueadero",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial Arrayanes",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9840521564477924
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-11",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Felicitación",
+          "area": "experiencia",
+          "grupo": null,
+          "motivo": "Felicitaciones",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Edificio Corporativo Nogal",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Felicitación",
+          "area": "operacion",
+          "motivo": "Aseo de zonas comunes",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Edificio Corporativo Nogal",
+          "destino": "automatica",
+          "confianzaTipologia": 0.5977285699674237
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-12",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Sugerencia",
+          "area": "experiencia",
+          "grupo": null,
+          "motivo": "Sugerencias del servicio",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Activación salida anticipada",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "gestor",
+          "confianzaTipologia": 0.02631578947368421
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": false
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-13",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": null,
+          "area": null,
+          "grupo": null,
+          "motivo": null,
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "gestor",
+          "activo": null,
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Corrección facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.28850278693963577
+        },
+        "aciertos": {
+          "tipo": null,
+          "area": null,
+          "motivo": null,
+          "tutela": true,
+          "activo": null,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-14",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": null,
+          "area": null,
+          "grupo": null,
+          "motivo": null,
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "gestor",
+          "activo": null,
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Corrección facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": null,
+          "destino": "gestor",
+          "confianzaTipologia": 0.13615855263076504
+        },
+        "aciertos": {
+          "tipo": null,
+          "area": null,
+          "motivo": null,
+          "tutela": true,
+          "activo": null,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-15",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": null,
+          "motivo": "Solicitud de no prorroga de contrato",
+          "motivosAceptables": [
+            "Solicitud de no prorroga de contrato",
+            "Paz y salvo"
+          ],
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Renovación y condiciones del contrato",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9296239010341699
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-16",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "grupo": null,
+          "motivo": "Disponibilidad de espacios",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": null,
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Disponibilidad de espacios",
+          "prioridad": "Baja",
+          "esTutela": false,
+          "activo": "Centro Comercial Arrayanes",
+          "destino": "gestor",
+          "confianzaTipologia": 0.36205085984502944
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": null,
+          "destino": false
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-17",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": null,
+          "motivo": "Activación de la cesión",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Torre Empresarial Guayacán",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "juridica",
+          "motivo": "Certificación contractual",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Torre Empresarial Guayacán",
+          "destino": "automatica",
+          "confianzaTipologia": 0.7517990285539853
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-18",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": null,
+          "area": "juridica",
+          "grupo": null,
+          "motivo": "Requerimiento o notificación legal",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": true,
+          "destino": null,
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "motivo": "Acceso y tarjetas de parqueadero",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "gestor",
+          "confianzaTipologia": 0.38097811700521905
+        },
+        "aciertos": {
+          "tipo": null,
+          "area": false,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 1,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-19",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "grupo": null,
+          "motivo": "Aire acondicionado y ventilación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": null,
+          "activo": "Hotel Puerta Aérea",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Queja",
+          "area": "operacion",
+          "motivo": "Aire acondicionado y ventilación",
+          "prioridad": "Alta",
+          "esTutela": false,
+          "activo": "Hotel Puerta Aérea",
+          "destino": "automatica",
+          "confianzaTipologia": 0.9842699643191348
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": null
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-20",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "cartera",
+          "grupo": null,
+          "motivo": "Acuerdo de pago",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Centro Comercial Arrayanes",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Sugerencia",
+          "area": "cartera",
+          "motivo": "Acuerdo de pago",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial Arrayanes",
+          "destino": "automatica",
+          "confianzaTipologia": 0.6897926819928748
+        },
+        "aciertos": {
+          "tipo": false,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-21",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "grupo": null,
+          "motivo": "Eventos y activaciones en zonas comunes",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Centro Comercial La Ceiba",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "comercial",
+          "motivo": "Eventos y activaciones en zonas comunes",
+          "prioridad": "Media",
+          "esTutela": false,
+          "activo": "Centro Comercial La Ceiba",
+          "destino": "gestor",
+          "confianzaTipologia": 0.48849678901232524
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": true,
+          "tutela": true,
+          "activo": true,
+          "destino": false
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    },
+    {
+      "proveedor": "reglas",
+      "fila": {
+        "casoId": "DIF-22",
+        "conjunto": "dificiles",
+        "esperado": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "grupo": null,
+          "motivo": "Soporte entrega de facturación",
+          "motivosAceptables": null,
+          "esTutela": false,
+          "derechoPeticion": false,
+          "riesgoLegal": false,
+          "destino": "automatica",
+          "activo": "Centro Comercial El Caracolí",
+          "prioridad": null
+        },
+        "obtenido": {
+          "tipo": "Petición",
+          "area": "rentas",
+          "motivo": "Corrección facturación",
+          "prioridad": "Urgente",
+          "esTutela": false,
+          "activo": "Centro Comercial El Caracolí",
+          "destino": "automatica",
+          "confianzaTipologia": 0.6263641611676065
+        },
+        "aciertos": {
+          "tipo": true,
+          "area": true,
+          "motivo": false,
+          "tutela": true,
+          "activo": true,
+          "destino": true
+        },
+        "latenciaMs": 0,
+        "costoUsd": 0,
+        "error": null
+      }
+    }
+  ]
+}

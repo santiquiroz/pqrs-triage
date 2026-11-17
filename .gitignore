@@ -1,0 +1,10 @@
+bin/
+obj/
+node_modules/
+dist/
+.angular/
+scripts/tev1.log*
+data/resultados/*.tmp
+*.user
+.vs/
+data/resultados/*.log

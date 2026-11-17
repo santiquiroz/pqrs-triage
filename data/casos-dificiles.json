@@ -1,0 +1,178 @@
+[
+ {
+  "id": "DIF-01", "canal": "Correo", "buzon": "juridica@suruworks.example",
+  "remitente": {"nombre": "Juzgado Doce Civil del Circuito de Medellín", "empresa": "Rama Judicial", "correo": "j12cctomed@cendoj.ramajudicial.example", "tipo": "Externo", "nit": null},
+  "asunto": "NOTIFICACIÓN AUTO ADMISORIO ACCIÓN DE TUTELA RAD. 05001-31-03-012-2026-00321-00",
+  "descripcion": "Cordial saludo. Por medio del presente se notifica a SURUWORKS S.A.S. el auto de fecha 10 de noviembre de 2026 mediante el cual se ADMITE la acción de tutela instaurada por Comercializadora Andina S.A.S. contra SURUWORKS S.A.S. por la presunta vulneración del derecho fundamental de petición. Se concede a la accionada el término de DOS (2) DÍAS contados a partir de la notificación para que rinda informe sobre los hechos y aporte las pruebas que pretenda hacer valer. Se advierte que el silencio dará lugar a presumir ciertos los hechos (art. 20 Decreto 2591 de 1991). Secretaría.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794394800000,
+  "esperado": {"tipo": null, "area": "juridica", "motivo": "Acción de tutela", "esTutela": true, "derechoPeticion": false, "riesgoLegal": true, "destino": "tutela", "activo": null}
+ },
+ {
+  "id": "DIF-02", "canal": "Correo", "buzon": "servicioalcliente@suruworks.example",
+  "remitente": {"nombre": "Juzgado Tercero Penal Municipal con Funciones de Control de Garantías de Bogotá", "empresa": "Rama Judicial", "correo": "j03pmgbt@cendoj.ramajudicial.example", "tipo": "Externo", "nit": null},
+  "asunto": "Requerimiento previo incidente de desacato - Tutela 11001-40-88-003-2026-00150-00",
+  "descripcion": "En atención a la solicitud presentada por el accionante Héctor Julio Ramírez, y previo a dar apertura al incidente de desacato, se REQUIERE al representante legal de SURUWORKS S.A.S. para que en el término de cuarenta y ocho (48) horas informe a este despacho sobre el cumplimiento de lo ordenado en el fallo de tutela del 2 de octubre de 2026, esto es, dar respuesta de fondo a la petición radicada el 4 de agosto sobre la devolución del depósito del Local 118 de Centro Comercial Los Almendros. Notifíquese y cúmplase.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794398400000,
+  "esperado": {"tipo": null, "area": "juridica", "motivo": "Acción de tutela", "esTutela": true, "derechoPeticion": false, "riesgoLegal": true, "destino": "tutela", "activo": "Centro Comercial Los Almendros"}
+ },
+ {
+  "id": "DIF-03", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Secretaría Juzgado 2 Civil Municipal de El Caracolí", "empresa": "Rama Judicial", "correo": "j02cmpalflc@cendoj.ramajudicial.example", "tipo": "Externo", "nit": null},
+  "asunto": "Notificación fallo de primera instancia - acción constitucional",
+  "descripcion": "Se notifica el fallo proferido dentro de la acción de tutela promovida por la señora María Fernanda Cuéllar contra SURUWORKS S.A.S. y otro. RESUELVE: PRIMERO: TUTELAR el derecho fundamental de petición. SEGUNDO: ORDENAR a SURUWORKS S.A.S. que dentro de las cuarenta y ocho (48) horas siguientes a la notificación de esta providencia emita respuesta clara, de fondo y congruente a la solicitud de paz y salvo del Local 07 de Centro Comercial El Caracolí. Se adjunta providencia en PDF.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794402000000,
+  "esperado": {"tipo": null, "area": "juridica", "motivo": "Acción de tutela", "esTutela": true, "derechoPeticion": false, "riesgoLegal": true, "destino": "tutela", "activo": "Centro Comercial El Caracolí"}
+ },
+ {
+  "id": "DIF-04", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Ricardo Montoya", "empresa": "Calzado El Paso", "correo": "gerencia@calzadoelpaso.example", "tipo": "Externo", "nit": "900.412.338-1"},
+  "asunto": "TERCERA VEZ QUE ESCRIBO - factura mal liquidada",
+  "descripcion": "Esta es la tercera vez que les escribo y nadie responde. La factura FE-88213 del local 52 en Centro Comercial La Ceiba vuelve a cobrar la administración dos veces. Si esta semana no me corrigen la factura voy a poner una tutela y a quejarme ante la Superintendencia. Ya hablé con mi abogado. Exijo una respuesta hoy mismo.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794405600000,
+  "esperado": {"tipo": "Reclamo", "area": "rentas", "motivo": "Corrección facturación", "esTutela": false, "derechoPeticion": false, "riesgoLegal": true, "destino": null, "activo": "Centro Comercial La Ceiba"}
+ },
+ {
+  "id": "DIF-05", "canal": "Correo", "buzon": "juridica@suruworks.example",
+  "remitente": {"nombre": "Paula Andrea Giraldo", "empresa": "Óptica Visión Clara", "correo": "pgiraldo@visionclara.example", "tipo": "Externo", "nit": "901.233.871-4"},
+  "asunto": "Derecho de petición - certificación de contrato",
+  "descripcion": "Señores SURUWORKS S.A.S. En ejercicio del derecho de petición consagrado en el artículo 23 de la Constitución Política y regulado por la Ley 1755 de 2015, solicito respetuosamente se expida certificación de la existencia del contrato de arrendamiento del Local 214 de Centro Comercial Arrayanes, indicando fecha de inicio, vigencia y valor actual del canon. La requiero para un trámite de crédito con mi banco. Quedo atenta dentro de los términos de ley.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794409200000,
+  "esperado": {"tipo": "Petición", "area": "juridica", "motivo": "Certificación contractual", "esTutela": false, "derechoPeticion": true, "riesgoLegal": false, "destino": "automatica", "activo": "Centro Comercial Arrayanes"}
+ },
+ {
+  "id": "DIF-06", "canal": "Portal", "buzon": null,
+  "remitente": {"nombre": "Camila Rojas", "empresa": "Tienda Natural Verde", "correo": "camila@naturalverde.example", "tipo": "Externo", "nit": "1.032.455.981-2"},
+  "asunto": "Robo en el parqueadero",
+  "descripcion": "Anoche a las 9 pm le rompieron el vidrio a mi carro en el sótano 2 del parqueadero y se llevaron un computador. El vigilante dice que las cámaras de ese sector no graban hace una semana. Necesito el reporte del incidente y los videos para la denuncia en Fiscalía.",
+  "activoDeclarado": "Centro Comercial Los Almendros", "localDeclarado": "Local 31", "tipologiaDeclarada": null, "creado": 1794412800000,
+  "esperado": {"tipo": "Queja", "area": "operacion", "motivo": "Novedad de seguridad", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": null, "activo": "Centro Comercial Los Almendros"}
+ },
+ {
+  "id": "DIF-07", "canal": "Correo", "buzon": "operaciones@suruworks.example",
+  "remitente": {"nombre": "Jhon Fredy Cárdenas", "empresa": "Logística Andes Express", "correo": "jcardenas@andesexpress.example", "tipo": "Externo", "nit": "830.119.402-6"},
+  "asunto": "URGENTE inundación bodega 14",
+  "descripcion": "Se rompió una tubería del techo de la bodega 14 del Parque Logístico Occidente y está cayendo agua sobre la mercancía. Tenemos 300 estibas en riesgo y el agua ya llegó al tablero eléctrico. Necesitamos a alguien de mantenimiento YA.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794416400000,
+  "esperado": {"tipo": "Petición", "area": "operacion", "motivo": "Mantenimiento correctivo en el espacio", "motivosAceptables": ["Mantenimiento correctivo en el espacio", "Daño en zonas comunes"], "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": null, "activo": "Parque Logístico Occidente"}
+ },
+ {
+  "id": "DIF-08", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Diana Marcela Pérez", "empresa": "Farmacia Vida Plena", "correo": "contabilidad@vidaplena.example", "tipo": "Externo", "nit": "857.620.975-9"},
+  "asunto": "Doble cobro canon octubre",
+  "descripcion": "Buenas tardes. En el estado de cuenta aparecen dos facturas por el canon de octubre del Local 240 de Centro Comercial El Caracolí: FE-77120 y FE-77154, por el mismo valor de $8.450.000. Solo corresponde una. Solicitamos anular la FE-77154 y emitir la nota crédito.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794420000000,
+  "esperado": {"tipo": "Reclamo", "area": "rentas", "motivo": "Corrección facturación", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Centro Comercial El Caracolí"}
+ },
+ {
+  "id": "DIF-09", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Accounts Payable", "empresa": "Globant Colombia S.A.S.", "correo": "ap.colombia@globant.example", "tipo": "Externo", "nit": "900.738.281-0"},
+  "asunto": "Invoice request - PO 4500198823",
+  "descripcion": "Hello, please issue the November invoice for office 1201 at Torre Empresarial Guayacán referencing our purchase order PO 4500198823. Invoices without the PO number are automatically rejected by our system. Thanks, AP team.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794423600000,
+  "esperado": {"tipo": "Petición", "area": "rentas", "motivo": "Facturación con Orden de Compra", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Torre Empresarial Guayacán"}
+ },
+ {
+  "id": "DIF-10", "canal": "Portal", "buzon": null,
+  "remitente": {"nombre": "Luis Alberto Mejía", "empresa": "Panadería La Espiga", "correo": "laespiga.Arrayanes@gmail.example", "tipo": "Externo", "nit": "79.845.221-3"},
+  "asunto": "tarjeta",
+  "descripcion": "buenas la tarjeta del parqueadero no me abre la talanquera desde el lunes y me toca pagar todos los dias como visitante q pena pero necesito q me la activen",
+  "activoDeclarado": "Centro Comercial Arrayanes", "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794427200000,
+  "esperado": {"tipo": "Petición", "area": "operacion", "motivo": "Acceso y tarjetas de parqueadero", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Centro Comercial Arrayanes"}
+ },
+ {
+  "id": "DIF-11", "canal": "Correo", "buzon": "servicioalcliente@suruworks.example",
+  "remitente": {"nombre": "Natalia Cifuentes", "empresa": "Bancolombia - Sucursal Buró", "correo": "ncifuentes@bancolombia.example", "tipo": "Externo", "nit": null},
+  "asunto": "Felicitaciones al equipo de aseo",
+  "descripcion": "Quiero felicitar al personal de aseo del piso 3 del Edificio Corporativo Nogal, en especial a doña Rosa. Durante la remodelación de nuestra oficina mantuvieron todo impecable y siempre con muy buena actitud. Gracias.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794430800000,
+  "esperado": {"tipo": "Felicitación", "area": "experiencia", "motivo": "Felicitaciones", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Edificio Corporativo Nogal"}
+ },
+ {
+  "id": "DIF-12", "canal": "Portal", "buzon": null,
+  "remitente": {"nombre": "Santiago Osorio", "empresa": "Café Origen", "correo": "santiago@cafeorigen.example", "tipo": "Externo", "nit": "901.556.120-8"},
+  "asunto": "Bicicleteros",
+  "descripcion": "Sería muy bueno que instalaran bicicleteros cubiertos cerca de la entrada norte. Muchos de nuestros empleados y clientes llegan en bicicleta y hoy las amarran a las barandas.",
+  "activoDeclarado": "Torre Empresarial Guayacán", "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794434400000,
+  "esperado": {"tipo": "Sugerencia", "area": "experiencia", "motivo": "Sugerencias del servicio", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Torre Empresarial Guayacán"}
+ },
+ {
+  "id": "DIF-13", "canal": "Correo", "buzon": "comercial@suruworks.example",
+  "remitente": {"nombre": "Equipo Ventas CloudERP", "empresa": "CloudERP Latam", "correo": "promo@clouderp-latam.example", "tipo": "Externo", "nit": null},
+  "asunto": "¡Último día! 40 % de descuento en licencias ERP para su empresa",
+  "descripcion": "Estimado cliente: solo por hoy obtenga 40 % de descuento en nuestro ERP en la nube. Agende una demo gratuita con un asesor y reciba un mes sin costo. Para dejar de recibir estos correos haga clic aquí.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794438000000,
+  "esperado": {"tipo": null, "area": null, "motivo": null, "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "gestor", "activo": null}
+ },
+ {
+  "id": "DIF-14", "canal": "Correo", "buzon": "cartera@suruworks.example",
+  "remitente": {"nombre": "Andrés Gómez", "empresa": "Comercializadora Andina S.A.S.", "correo": "agomez@comandina.example", "tipo": "Externo", "nit": "824.289.923-8"},
+  "asunto": "Respuesta automática: Fuera de la oficina",
+  "descripcion": "Gracias por su mensaje. Estaré fuera de la oficina hasta el 18 de noviembre con acceso limitado al correo. Para temas urgentes comuníquese con Laura Restrepo al 315 288 4410.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794441600000,
+  "esperado": {"tipo": null, "area": null, "motivo": null, "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "gestor", "activo": null}
+ },
+ {
+  "id": "DIF-15", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Martha Lucía Henao", "empresa": "Boutique Encanto", "correo": "boutiqueencanto@hotmail.example", "tipo": "Externo", "nit": "43.512.889-0"},
+  "asunto": "Paz y salvo y no renovación",
+  "descripcion": "Buenos días. Les informo que no vamos a renovar el contrato del Local 88 de Centro Comercial La Ceiba que vence en febrero. Por favor indíquenme el procedimiento para la entrega y también necesito el paz y salvo de cartera hasta la fecha.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794445200000,
+  "esperado": {"tipo": "Petición", "area": "rentas", "motivo": "Solicitud de no prorroga de contrato", "motivosAceptables": ["Solicitud de no prorroga de contrato", "Paz y salvo"], "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": null, "activo": "Centro Comercial La Ceiba"}
+ },
+ {
+  "id": "DIF-16", "canal": "Correo", "buzon": "comercial@suruworks.example",
+  "remitente": {"nombre": "Felipe Toro", "empresa": "Grupo Restaurantes Nativa", "correo": "expansion@gruponativa.example", "tipo": "Externo", "nit": "900.871.004-5"},
+  "asunto": "Interés en local para restaurante",
+  "descripcion": "Hola, somos una cadena de restaurantes con 12 sedes y estamos buscando un local de entre 150 y 200 m² con salida de humos para abrir en el sur de Bogotá durante el primer semestre de 2027. ¿Tienen disponibilidad en Centro Comercial Arrayanes o Centro Comercial Los Almendros? Quedo atento a planos y condiciones.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794448800000,
+  "esperado": {"tipo": "Petición", "area": "comercial", "motivo": "Disponibilidad de espacios", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": null}
+ },
+ {
+  "id": "DIF-17", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Jorge Iván Restrepo", "empresa": "Inversiones JR S.A.S.", "correo": "jirestrepo@inversionesjr.example", "tipo": "Externo", "nit": "901.004.776-3"},
+  "asunto": "Solicitud cesión de contrato de arrendamiento Oficina 704",
+  "descripcion": "Respetados señores: Inversiones JR S.A.S., arrendataria de la Oficina 704 de la Torre Empresarial Guayacán, se encuentra en proceso de fusión con Grupo Empresarial Antioquia S.A.S., sociedad que asumirá todas sus obligaciones. Por lo anterior solicitamos autorizar la cesión del contrato de arrendamiento a favor de la sociedad absorbente a partir del 1 de enero de 2027. Adjuntamos certificados de existencia y representación legal de ambas sociedades y estados financieros.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794452400000,
+  "esperado": {"tipo": "Petición", "area": "rentas", "motivo": "Activación de la cesión", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Torre Empresarial Guayacán"}
+ },
+ {
+  "id": "DIF-18", "canal": "Correo", "buzon": "juridica@suruworks.example",
+  "remitente": {"nombre": "Delegatura para la Protección del Consumidor", "empresa": "Superintendencia de Industria y Comercio", "correo": "notificacionesjudiciales@sic.example", "tipo": "Externo", "nit": "800.176.089-2"},
+  "asunto": "Requerimiento de información - Radicado SIC 26-412873",
+  "descripcion": "La Superintendencia de Industria y Comercio, en ejercicio de sus facultades de inspección y vigilancia, requiere a SURUWORKS S.A.S. para que en un plazo de diez (10) días hábiles remita la información sobre las tarifas de parqueadero aplicadas en Centro Comercial La Ceiba durante 2026 y los avisos informativos exhibidos al público, con ocasión de la queja presentada por un usuario.",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794456000000,
+  "esperado": {"tipo": null, "area": "juridica", "motivo": "Requerimiento o notificación legal", "esTutela": false, "derechoPeticion": false, "riesgoLegal": true, "destino": null, "activo": "Centro Comercial La Ceiba"}
+ },
+ {
+  "id": "DIF-19", "canal": "Portal", "buzon": null,
+  "remitente": {"nombre": "Ana María Salazar", "empresa": null, "correo": "anamsalazar@gmail.example", "tipo": "Externo", "nit": null},
+  "asunto": "Habitación sin aire",
+  "descripcion": "Llevo dos noches en el hotel y el aire acondicionado de la habitación 512 no funciona. Lo reporté en recepción y me dijeron que mañana. Con el calor no se puede dormir, pésimo servicio para lo que se paga.",
+  "activoDeclarado": "Hotel Puerta Aérea", "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794459600000,
+  "esperado": {"tipo": "Queja", "area": "operacion", "motivo": "Aire acondicionado y ventilación", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": null, "activo": "Hotel Puerta Aérea"}
+ },
+ {
+  "id": "DIF-20", "canal": "Correo", "buzon": "cartera@suruworks.example",
+  "remitente": {"nombre": "Germán Quintero", "empresa": "Ferretería El Tornillo", "correo": "ferreteriaeltornillo@yahoo.example", "tipo": "Externo", "nit": "71.663.210-4"},
+  "asunto": "Propuesta para ponernos al día",
+  "descripcion": "Buenas. Por la baja en ventas de los últimos meses quedamos atrasados con tres cánones del local 19 de Centro Comercial Arrayanes. Queremos ponernos al día y proponemos pagar la deuda en seis cuotas mensuales a partir de diciembre. ¿Con quién podemos firmar el acuerdo?",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794463200000,
+  "esperado": {"tipo": "Petición", "area": "cartera", "motivo": "Acuerdo de pago", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Centro Comercial Arrayanes"}
+ },
+ {
+  "id": "DIF-21", "canal": "Correo", "buzon": "comercial@suruworks.example",
+  "remitente": {"nombre": "Valeria Duque", "empresa": "Agencia BTL Impulso", "correo": "vduque@impulsobtl.example", "tipo": "Externo", "nit": "900.300.512-7"},
+  "asunto": "Activación de marca en plazoleta",
+  "descripcion": "Buen día. Representamos a una marca de bebidas y queremos hacer una activación con stand de 3x3 m y muestreo de producto en la plazoleta central de Centro Comercial La Ceiba los fines de semana de diciembre. ¿Cuáles son las tarifas y requisitos?",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794466800000,
+  "esperado": {"tipo": "Petición", "area": "comercial", "motivo": "Eventos y activaciones en zonas comunes", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Centro Comercial La Ceiba"}
+ },
+ {
+  "id": "DIF-22", "canal": "Correo", "buzon": "rentas@suruworks.example",
+  "remitente": {"nombre": "Sandra Patiño", "empresa": "Droguería Salud Total", "correo": "facturacion@drogueriasaludtotal.example", "tipo": "Externo", "nit": "800.554.902-1"},
+  "asunto": "No ha llegado la factura de noviembre",
+  "descripcion": "Hola, a la fecha no hemos recibido en el correo de facturación electrónica la factura de noviembre del Local 12 del Centro Comercial El Caracolí. Necesitamos causarla antes del cierre contable del viernes. ¿Nos la pueden reenviar?",
+  "activoDeclarado": null, "localDeclarado": null, "tipologiaDeclarada": null, "creado": 1794470400000,
+  "esperado": {"tipo": "Petición", "area": "rentas", "motivo": "Soporte entrega de facturación", "esTutela": false, "derechoPeticion": false, "riesgoLegal": false, "destino": "automatica", "activo": "Centro Comercial El Caracolí"}
+ }
+]

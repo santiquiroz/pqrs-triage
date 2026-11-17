@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PqrsTriage.Api/PqrsTriage.Api.csproj" />
+  <Project Path="PqrsTriage.Tests/PqrsTriage.Tests.csproj" />
+</Solution>

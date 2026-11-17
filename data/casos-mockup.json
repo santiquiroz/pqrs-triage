@@ -1,0 +1,1490 @@
+[
+ {
+  "id": "PQRS-2026-00001",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Corrección de factura de canon",
+  "descripcion": "La factura del mes trae un valor de canon que no corresponde al incremento pactado en el contrato. Solicitamos anularla y emitir una nueva.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1767638460000,
+  "esperado": {
+   "tipo": "Reclamo",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Corrección facturación",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Centro Comercial Arrayanes"
+  }
+ },
+ {
+  "id": "PQRS-2026-00002",
+  "canal": "Correo",
+  "buzon": "servicioalcliente@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Horario de cargue y descargue",
+  "descripcion": "Sugerimos ampliar el horario de cargue y descargue en la madrugada.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1768396500000,
+  "esperado": {
+   "tipo": "Sugerencia",
+   "area": "experiencia",
+   "grupo": "Voz del cliente",
+   "motivo": "Sugerencias del servicio",
+   "prioridad": "Baja",
+   "esTutela": false,
+   "activo": "Centro Comercial El Caracolí"
+  }
+ },
+ {
+  "id": "PQRS-2026-00003",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Facturación de celdas de parqueadero",
+  "descripcion": "Necesitamos que las celdas de parqueadero adicionales se facturen por separado del canon.",
+  "activoDeclarado": "Hotel Puerta Aérea",
+  "localDeclarado": "Oficina 828",
+  "tipologiaDeclarada": null,
+  "creado": 1768828980000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Facturación parqueaderos",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Hotel Puerta Aérea"
+  }
+ },
+ {
+  "id": "PQRS-2026-00004",
+  "canal": "Correo",
+  "buzon": "operaciones@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Filtración en pasillo",
+  "descripcion": "Hay una filtración de agua frente a nuestro local que pone en riesgo a los clientes.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1768834920000,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Mantenimiento",
+   "motivo": "Daño en zonas comunes",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Parque Logístico Occidente"
+  }
+ },
+ {
+  "id": "PQRS-2026-00005",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Corrección de factura de canon",
+  "descripcion": "La factura del mes trae un valor de canon que no corresponde al incremento pactado en el contrato. Solicitamos anularla y emitir una nueva.",
+  "activoDeclarado": "Centro Comercial Los Almendros",
+  "localDeclarado": "Local 293",
+  "tipologiaDeclarada": null,
+  "creado": 1770066420000,
+  "esperado": {
+   "tipo": "Reclamo",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Corrección facturación",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Centro Comercial Los Almendros"
+  }
+ },
+ {
+  "id": "PQRS-2026-00006",
+  "canal": "Correo",
+  "buzon": "comercial@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Eventos y activaciones en zonas comunes",
+  "descripcion": "Solicitud relacionada con eventos y activaciones en zonas comunes para nuestro espacio en Edificio Corporativo Nogal.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1770640500000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "comercial",
+   "grupo": "Espacios y condiciones",
+   "motivo": "Eventos y activaciones en zonas comunes",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00007",
+  "canal": "Correo",
+  "buzon": "comercial@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Renovación y condiciones del contrato",
+  "descripcion": "Solicitud relacionada con renovación y condiciones del contrato para nuestro espacio en Centro Comercial El Caracolí.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1771536300000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "comercial",
+   "grupo": "Espacios y condiciones",
+   "motivo": "Renovación y condiciones del contrato",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial El Caracolí"
+  }
+ },
+ {
+  "id": "PQRS-2026-00008",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Facturación por recaudo de eventos",
+  "descripcion": "Solicitud relacionada con facturación por recaudo de eventos para nuestro espacio en Centro Comercial La Ceiba.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1771886220000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Facturación por recaudo de eventos",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00009",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Cambio de correo para facturas",
+  "descripcion": "A partir de este mes las facturas deben llegar a un nuevo buzón de recepción.",
+  "activoDeclarado": "Centro Comercial El Caracolí",
+  "localDeclarado": "Local 299",
+  "tipologiaDeclarada": "Actualización correo facturación",
+  "creado": 1772660160000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Actualización datos del cliente",
+   "motivo": "Actualización correo facturación",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Centro Comercial El Caracolí"
+  }
+ },
+ {
+  "id": "PQRS-2026-00010",
+  "canal": "Correo",
+  "buzon": "operaciones@suruworks.example",
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Novedad de seguridad",
+  "descripcion": "Solicitud relacionada con novedad de seguridad para nuestro espacio en Hotel Puerta Aérea.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1773175920000,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Seguridad, aseo y parqueaderos",
+   "motivo": "Novedad de seguridad",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Hotel Puerta Aérea"
+  }
+ },
+ {
+  "id": "PQRS-2026-00011",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Hernán Quintero",
+   "empresa": "Café Montaña Alta",
+   "correo": "hquintero@montanaalta.example",
+   "tipo": "Externo",
+   "nit": "878.912.290-1"
+  },
+  "asunto": "Certificación contractual",
+  "descripcion": "Solicitud relacionada con certificación contractual para nuestro espacio en Hotel Puerta Aérea.",
+  "activoDeclarado": "Hotel Puerta Aérea",
+  "localDeclarado": "Oficina 1098",
+  "tipologiaDeclarada": "Certificación contractual",
+  "creado": 1773322500000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "juridica",
+   "grupo": "Asuntos legales",
+   "motivo": "Certificación contractual",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Hotel Puerta Aérea"
+  }
+ },
+ {
+  "id": "PQRS-2026-00012",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Dación en pago",
+  "descripcion": "Solicitud relacionada con dación en pago para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1773671640000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Dación en pago",
+   "prioridad": "Baja",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00013",
+  "canal": "Correo",
+  "buzon": "operaciones@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Novedad de seguridad",
+  "descripcion": "Solicitud relacionada con novedad de seguridad para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1775509980000,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Seguridad, aseo y parqueaderos",
+   "motivo": "Novedad de seguridad",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00014",
+  "canal": "Correo",
+  "buzon": "comercial@suruworks.example",
+  "remitente": {
+   "nombre": "Marcela Torres",
+   "empresa": "Distribuidora del Valle S.A.S.",
+   "correo": "mtorres@dvalle.example",
+   "tipo": "Externo",
+   "nit": "818.192.651-0"
+  },
+  "asunto": "Eventos y activaciones en zonas comunes",
+  "descripcion": "Solicitud relacionada con eventos y activaciones en zonas comunes para nuestro espacio en Bodegas El Rosal.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1775510340000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "comercial",
+   "grupo": "Espacios y condiciones",
+   "motivo": "Eventos y activaciones en zonas comunes",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Bodegas El Rosal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00015",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Acuerdo de pago",
+  "descripcion": "Solicitud relacionada con acuerdo de pago para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1776710940000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Acuerdo de pago",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00016",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Dación en pago",
+  "descripcion": "Solicitud relacionada con dación en pago para nuestro espacio en Edificio Corporativo Nogal.",
+  "activoDeclarado": "Edificio Corporativo Nogal",
+  "localDeclarado": "Oficina 245",
+  "tipologiaDeclarada": "Dación en pago",
+  "creado": 1776712980000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Dación en pago",
+   "prioridad": "Baja",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00017",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Anticipos",
+  "descripcion": "Solicitud relacionada con anticipos para nuestro espacio en Parque Logístico Occidente.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1777301040000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Anticipos",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Parque Logístico Occidente"
+  }
+ },
+ {
+  "id": "PQRS-2026-00018",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Marcela Torres",
+   "empresa": "Distribuidora del Valle S.A.S.",
+   "correo": "mtorres@dvalle.example",
+   "tipo": "Externo",
+   "nit": "818.192.651-0"
+  },
+  "asunto": "Certificado de paz y salvo",
+  "descripcion": "Necesitamos el paz y salvo para presentarlo a una entidad financiera.",
+  "activoDeclarado": "Centro Comercial La Ceiba",
+  "localDeclarado": "Local 281",
+  "tipologiaDeclarada": "Paz y salvo",
+  "creado": 1777901520000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Paz y salvo",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00019",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Certificado de paz y salvo",
+  "descripcion": "Necesitamos el paz y salvo para presentarlo a una entidad financiera.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1778762520000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Paz y salvo",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00020",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Hernán Quintero",
+   "empresa": "Café Montaña Alta",
+   "correo": "hquintero@montanaalta.example",
+   "tipo": "Externo",
+   "nit": "878.912.290-1"
+  },
+  "asunto": "Activación salida anticipada",
+  "descripcion": "Solicitud relacionada con activación salida anticipada para nuestro espacio en Bodegas El Rosal.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1779728940000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Activación salida anticipada",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Bodegas El Rosal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00021",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Falla del aire acondicionado",
+  "descripcion": "El aire acondicionado del piso no funciona desde ayer y la temperatura es muy alta.",
+  "activoDeclarado": "Hotel Puerta Aérea",
+  "localDeclarado": "Oficina 938",
+  "tipologiaDeclarada": "Aire acondicionado y ventilación",
+  "creado": 1779736680000,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Mantenimiento",
+   "motivo": "Aire acondicionado y ventilación",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Hotel Puerta Aérea"
+  }
+ },
+ {
+  "id": "PQRS-2026-00022",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Ana María Rojas",
+   "empresa": "Transportes Altiplano S.A.S.",
+   "correo": "amrojas@altiplano.example",
+   "tipo": "Externo",
+   "nit": "808.160.136-3"
+  },
+  "asunto": "Felicitaciones",
+  "descripcion": "Solicitud relacionada con felicitaciones para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": "Torre Empresarial Guayacán",
+  "localDeclarado": "Oficina 799",
+  "tipologiaDeclarada": "Felicitaciones",
+  "creado": 1780492620000,
+  "esperado": {
+   "tipo": "Sugerencia",
+   "area": "experiencia",
+   "grupo": "Voz del cliente",
+   "motivo": "Felicitaciones",
+   "prioridad": "Baja",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00023",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Hernán Quintero",
+   "empresa": "Café Montaña Alta",
+   "correo": "hquintero@montanaalta.example",
+   "tipo": "Externo",
+   "nit": "878.912.290-1"
+  },
+  "asunto": "Aplicación de pagos",
+  "descripcion": "Solicitud relacionada con aplicación de pagos para nuestro espacio en Edificio Corporativo Nogal.",
+  "activoDeclarado": "Edificio Corporativo Nogal",
+  "localDeclarado": "Oficina 716",
+  "tipologiaDeclarada": "Aplicación de pagos",
+  "creado": 1781130960000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Aplicación de pagos",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00024",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Inquietudes cliente interno",
+  "descripcion": "Solicitud relacionada con inquietudes cliente interno para nuestro espacio en Edificio Corporativo Nogal.",
+  "activoDeclarado": "Edificio Corporativo Nogal",
+  "localDeclarado": "Oficina 495",
+  "tipologiaDeclarada": null,
+  "creado": 1781889660000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Inquietudes cliente interno",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00025",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Marcela Torres",
+   "empresa": "Distribuidora del Valle S.A.S.",
+   "correo": "mtorres@dvalle.example",
+   "tipo": "Externo",
+   "nit": "818.192.651-0"
+  },
+  "asunto": "Dación en pago",
+  "descripcion": "Solicitud relacionada con dación en pago para nuestro espacio en Centro Comercial La Ceiba.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1782133380000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Dación en pago",
+   "prioridad": "Baja",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00026",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Inquietudes cliente interno",
+  "descripcion": "Solicitud relacionada con inquietudes cliente interno para nuestro espacio en Centro Comercial Los Almendros.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1782157020000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Inquietudes cliente interno",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial Los Almendros"
+  }
+ },
+ {
+  "id": "PQRS-2026-00027",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Hernán Quintero",
+   "empresa": "Café Montaña Alta",
+   "correo": "hquintero@montanaalta.example",
+   "tipo": "Externo",
+   "nit": "878.912.290-1"
+  },
+  "asunto": "Aplicación de pagos",
+  "descripcion": "Solicitud relacionada con aplicación de pagos para nuestro espacio en Edificio Corporativo Nogal.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1782933720000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Aplicación de pagos",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00028",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Reembolso de pago doble",
+  "descripcion": "Pagamos dos veces el canon de este mes por error. Solicitamos el reembolso del valor duplicado.",
+  "activoDeclarado": "Torre Empresarial Guayacán",
+  "localDeclarado": "Oficina 497",
+  "tipologiaDeclarada": "Solicitud reembolsos",
+  "creado": 1783364580000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Solicitud reembolsos",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00029",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Cesión de contrato",
+  "descripcion": "Vendimos el establecimiento y requerimos activar la cesión del contrato al nuevo propietario.",
+  "activoDeclarado": "Parque Logístico Occidente",
+  "localDeclarado": "Bodega 14",
+  "tipologiaDeclarada": null,
+  "creado": 1783694820000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Activación de la cesión",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Parque Logístico Occidente"
+  }
+ },
+ {
+  "id": "PQRS-2026-00030",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Solicitud de estado de cuenta",
+  "descripcion": "Requerimos el estado de cuenta actualizado para conciliar con nuestra contabilidad.",
+  "activoDeclarado": "Centro Comercial Los Almendros",
+  "localDeclarado": "Local 136",
+  "tipologiaDeclarada": "Paz y salvo",
+  "creado": 1783709760000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Estado de cuenta",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial Los Almendros"
+  }
+ },
+ {
+  "id": "PQRS-2026-00031",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Marcela Torres",
+   "empresa": "Distribuidora del Valle S.A.S.",
+   "correo": "mtorres@dvalle.example",
+   "tipo": "Externo",
+   "nit": "818.192.651-0"
+  },
+  "asunto": "Acuerdo de pago",
+  "descripcion": "Solicitud relacionada con acuerdo de pago para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1786575360000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Acuerdo de pago",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00032",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Actualización datos deudores",
+  "descripcion": "Solicitud relacionada con actualización datos deudores para nuestro espacio en Centro Comercial La Ceiba.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1786738620000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Actualización datos del cliente",
+   "motivo": "Actualización datos deudores",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00033",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Cesión de contrato",
+  "descripcion": "Vendimos el establecimiento y requerimos activar la cesión del contrato al nuevo propietario.",
+  "activoDeclarado": "Edificio Corporativo Nogal",
+  "localDeclarado": "Oficina 742",
+  "tipologiaDeclarada": null,
+  "creado": 1787058600000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Activación de la cesión",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00034",
+  "canal": "Correo",
+  "buzon": "operaciones@suruworks.example",
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Filtración en pasillo",
+  "descripcion": "Hay una filtración de agua frente a nuestro local que pone en riesgo a los clientes.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1787072160000,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Mantenimiento",
+   "motivo": "Daño en zonas comunes",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial El Caracolí"
+  }
+ },
+ {
+  "id": "PQRS-2026-00035",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Certificación contractual",
+  "descripcion": "Solicitud relacionada con certificación contractual para nuestro espacio en Centro Comercial Los Almendros.",
+  "activoDeclarado": "Centro Comercial Los Almendros",
+  "localDeclarado": "Local 160",
+  "tipologiaDeclarada": "Certificación contractual",
+  "creado": 1788786660000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "juridica",
+   "grupo": "Asuntos legales",
+   "motivo": "Certificación contractual",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial Los Almendros"
+  }
+ },
+ {
+  "id": "PQRS-2026-00036",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Cambio de correo para facturas",
+  "descripcion": "A partir de este mes las facturas deben llegar a un nuevo buzón de recepción.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1790000160000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Actualización datos del cliente",
+   "motivo": "Actualización correo facturación",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00037",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Certificado de paz y salvo",
+  "descripcion": "Necesitamos el paz y salvo para presentarlo a una entidad financiera.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1790089200000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Paz y salvo",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial Arrayanes"
+  }
+ },
+ {
+  "id": "PQRS-2026-00038",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Jorge Pineda",
+   "empresa": "Farmacia Vida Plena",
+   "correo": "jpineda@vidaplena.example",
+   "tipo": "Externo",
+   "nit": "857.620.975-9"
+  },
+  "asunto": "Facturación con Orden de Compra",
+  "descripcion": "Solicitud relacionada con facturación con orden de compra para nuestro espacio en Parque Logístico Occidente.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1792444044947,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Facturación con Orden de Compra",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Parque Logístico Occidente"
+  }
+ },
+ {
+  "id": "PQRS-2026-00039",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Cesión de contrato",
+  "descripcion": "Vendimos el establecimiento y requerimos activar la cesión del contrato al nuevo propietario.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1792938600000,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Activación de la cesión",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial El Caracolí"
+  }
+ },
+ {
+  "id": "PQRS-2026-00040",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Marcela Torres",
+   "empresa": "Distribuidora del Valle S.A.S.",
+   "correo": "mtorres@dvalle.example",
+   "tipo": "Externo",
+   "nit": "818.192.651-0"
+  },
+  "asunto": "Factura rechazada por la DIAN",
+  "descripcion": "Nuestro proveedor tecnológico rechazó la factura electrónica por inconsistencia en el NIT. Agradecemos reexpedirla.",
+  "activoDeclarado": "Edificio Corporativo Nogal",
+  "localDeclarado": "Oficina 1154",
+  "tipologiaDeclarada": "Facturación rechazada",
+  "creado": 1793041148964,
+  "esperado": {
+   "tipo": "Reclamo",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Facturación rechazada",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00041",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Hernán Quintero",
+   "empresa": "Café Montaña Alta",
+   "correo": "hquintero@montanaalta.example",
+   "tipo": "Externo",
+   "nit": "878.912.290-1"
+  },
+  "asunto": "Factura rechazada por la DIAN",
+  "descripcion": "Nuestro proveedor tecnológico rechazó la factura electrónica por inconsistencia en el NIT. Agradecemos reexpedirla.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793093938132,
+  "esperado": {
+   "tipo": "Reclamo",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Facturación rechazada",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Bodegas El Rosal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00042",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Paula Cifuentes",
+   "empresa": "Textiles Sabana S.A.",
+   "correo": "pcifuentes@txsabana.example",
+   "tipo": "Externo",
+   "nit": "881.401.611-0"
+  },
+  "asunto": "Cesión de contrato",
+  "descripcion": "Vendimos el establecimiento y requerimos activar la cesión del contrato al nuevo propietario.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793105620588,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Administración contratos actuales",
+   "motivo": "Activación de la cesión",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00043",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Aplicación de pagos",
+  "descripcion": "Solicitud relacionada con aplicación de pagos para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793226535713,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Aplicación de pagos",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00044",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Solicitud de creacion o modificacion de propiedades",
+  "descripcion": "Solicitud relacionada con solicitud de creacion o modificacion de propiedades para nuestro espacio en Bodegas El Rosal.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793290137094,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Actualización datos Maestros",
+   "motivo": "Solicitud de creacion o modificacion de propiedades",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Bodegas El Rosal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00045",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Falla del aire acondicionado",
+  "descripcion": "El aire acondicionado del piso no funciona desde ayer y la temperatura es muy alta.",
+  "activoDeclarado": "Centro Comercial Arrayanes",
+  "localDeclarado": "Local 220",
+  "tipologiaDeclarada": "Aire acondicionado y ventilación",
+  "creado": 1793352631621,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Mantenimiento",
+   "motivo": "Aire acondicionado y ventilación",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial Arrayanes"
+  }
+ },
+ {
+  "id": "PQRS-2026-00046",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Soporte entrega de facturación",
+  "descripcion": "Solicitud relacionada con soporte entrega de facturación para nuestro espacio en Centro Comercial El Caracolí.",
+  "activoDeclarado": "Centro Comercial El Caracolí",
+  "localDeclarado": "Local 184",
+  "tipologiaDeclarada": "Soporte entrega de facturación",
+  "creado": 1793356322110,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Soporte entrega de facturación",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Centro Comercial El Caracolí"
+  }
+ },
+ {
+  "id": "PQRS-2026-00047",
+  "canal": "Correo",
+  "buzon": "operaciones@suruworks.example",
+  "remitente": {
+   "nombre": "Ana María Rojas",
+   "empresa": "Transportes Altiplano S.A.S.",
+   "correo": "amrojas@altiplano.example",
+   "tipo": "Externo",
+   "nit": "808.160.136-3"
+  },
+  "asunto": "Falla del aire acondicionado",
+  "descripcion": "El aire acondicionado del piso no funciona desde ayer y la temperatura es muy alta.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793362464551,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Mantenimiento",
+   "motivo": "Aire acondicionado y ventilación",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Hotel Puerta Aérea"
+  }
+ },
+ {
+  "id": "PQRS-2026-00048",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Andrés Gómez",
+   "empresa": "SuruWorks - Contabilidad",
+   "correo": "agomez@suruworks.example",
+   "tipo": "Interno",
+   "nit": "857.986.673-7"
+  },
+  "asunto": "Anticipos",
+  "descripcion": "Solicitud relacionada con anticipos para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": "Torre Empresarial Guayacán",
+  "localDeclarado": "Oficina 414",
+  "tipologiaDeclarada": null,
+  "creado": 1793678964047,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Anticipos",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Torre Empresarial Guayacán"
+  }
+ },
+ {
+  "id": "PQRS-2026-00049",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Ana María Rojas",
+   "empresa": "Transportes Altiplano S.A.S.",
+   "correo": "amrojas@altiplano.example",
+   "tipo": "Externo",
+   "nit": "808.160.136-3"
+  },
+  "asunto": "Inquietudes cliente interno",
+  "descripcion": "Solicitud relacionada con inquietudes cliente interno para nuestro espacio en Centro Comercial La Ceiba.",
+  "activoDeclarado": "Centro Comercial La Ceiba",
+  "localDeclarado": "Local 176",
+  "tipologiaDeclarada": "Inquietud sobre facturación",
+  "creado": 1793804439500,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Inquietudes cliente interno",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00050",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Marcela Torres",
+   "empresa": "Distribuidora del Valle S.A.S.",
+   "correo": "mtorres@dvalle.example",
+   "tipo": "Externo",
+   "nit": "818.192.651-0"
+  },
+  "asunto": "Anticipos",
+  "descripcion": "Solicitud relacionada con anticipos para nuestro espacio en Centro Comercial La Ceiba.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793816179249,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "rentas",
+   "grupo": "Proceso Facturación",
+   "motivo": "Anticipos",
+   "prioridad": "Urgente",
+   "esTutela": false,
+   "activo": "Centro Comercial La Ceiba"
+  }
+ },
+ {
+  "id": "PQRS-2026-00051",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Aplicación de pagos",
+  "descripcion": "Solicitud relacionada con aplicación de pagos para nuestro espacio en Edificio Corporativo Nogal.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793823385152,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Aplicación de pagos",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Edificio Corporativo Nogal"
+  }
+ },
+ {
+  "id": "PQRS-2026-00052",
+  "canal": "Correo",
+  "buzon": "cartera@suruworks.example",
+  "remitente": {
+   "nombre": "Ana María Rojas",
+   "empresa": "Transportes Altiplano S.A.S.",
+   "correo": "amrojas@altiplano.example",
+   "tipo": "Externo",
+   "nit": "808.160.136-3"
+  },
+  "asunto": "Solicitud de estado de cuenta",
+  "descripcion": "Requerimos el estado de cuenta actualizado para conciliar con nuestra contabilidad.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793858336855,
+  "esperado": {
+   "tipo": "Petición",
+   "area": "cartera",
+   "grupo": "Cuenta del cliente",
+   "motivo": "Estado de cuenta",
+   "prioridad": "Media",
+   "esTutela": false,
+   "activo": "Centro Comercial Los Almendros"
+  }
+ },
+ {
+  "id": "PQRS-2026-00053",
+  "canal": "Correo",
+  "buzon": "operaciones@suruworks.example",
+  "remitente": {
+   "nombre": "Diego Salazar",
+   "empresa": "Óptica Visión Clara",
+   "correo": "dsalazar@visionclara.example",
+   "tipo": "Externo",
+   "nit": "810.824.360-5"
+  },
+  "asunto": "Filtración en pasillo",
+  "descripcion": "Hay una filtración de agua frente a nuestro local que pone en riesgo a los clientes.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1793940591556,
+  "esperado": {
+   "tipo": "Queja",
+   "area": "operacion",
+   "grupo": "Mantenimiento",
+   "motivo": "Daño en zonas comunes",
+   "prioridad": "Alta",
+   "esTutela": false,
+   "activo": "Centro Comercial Los Almendros"
+  }
+ },
+ {
+  "id": "PQRS-2026-00054",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Diego Salazar",
+   "empresa": "Óptica Visión Clara",
+   "correo": "dsalazar@visionclara.example",
+   "tipo": "Externo",
+   "nit": "810.824.360-5"
+  },
+  "asunto": "Facturación por recaudo de eventos",
+  "descripcion": "Solicitud relacionada con facturación por recaudo de eventos para nuestro espacio en Centro Comercial Arrayanes.",
+  "activoDeclarado": "Centro Comercial Arrayanes",
+  "localDeclarado": "Local 310",
+  "tipologiaDeclarada": null,
+  "creado": 1794266798723,
+  "esperado": null
+ },
+ {
+  "id": "PQRS-2026-00055",
+  "canal": "Correo",
+  "buzon": "rentas@suruworks.example",
+  "remitente": {
+   "nombre": "Laura Restrepo",
+   "empresa": "Comercializadora Andina S.A.S.",
+   "correo": "laura.restrepo@comandina.example",
+   "tipo": "Externo",
+   "nit": "824.289.923-8"
+  },
+  "asunto": "Corrección de factura de canon",
+  "descripcion": "La factura del mes trae un valor de canon que no corresponde al incremento pactado en el contrato. Solicitamos anularla y emitir una nueva.",
+  "activoDeclarado": null,
+  "localDeclarado": null,
+  "tipologiaDeclarada": null,
+  "creado": 1794272600293,
+  "esperado": null
+ },
+ {
+  "id": "PQRS-2026-00056",
+  "canal": "Portal",
+  "buzon": null,
+  "remitente": {
+   "nombre": "Lina Cárdenas",
+   "empresa": "SuruWorks - Gerencia de activo",
+   "correo": "lcardenas@suruworks.example",
+   "tipo": "Interno",
+   "nit": "876.505.563-9"
+  },
+  "asunto": "Activación de Otrosí en trámite",
+  "descripcion": "Solicitud relacionada con activación de otrosí en trámite para nuestro espacio en Torre Empresarial Guayacán.",
+  "activoDeclarado": "Torre Empresarial Guayacán",
+  "localDeclarado": "Oficina 294",
+  "tipologiaDeclarada": null,
+  "creado": 1794286165569,
+  "esperado": null
+ }
+]

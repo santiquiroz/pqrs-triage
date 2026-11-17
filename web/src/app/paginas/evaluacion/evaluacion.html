@@ -1,0 +1,130 @@
+<section class="cabecera">
+  <span class="eyebrow">Evaluación con casos etiquetados</span>
+  <h1>¿Acierta? Medido caso por caso</h1>
+  <p class="suave">Los casos del mockup de diseño son sintéticos y repiten las palabras del catálogo: favorecen a las reglas. Los difíciles están escritos como llegan de verdad.</p>
+</section>
+
+<section class="controles tarjeta" aria-label="Configurar la evaluación">
+  <label class="campo">Conjunto
+    <select [value]="conjunto()" (change)="conjunto.set($any($event.target).value)" [disabled]="corriendo()">
+      @for (c of conjuntos(); track c.id) {
+        <option [value]="c.id" [selected]="c.id === conjunto()">{{ c.nombre }} ({{ c.etiquetados }} etiquetados)</option>
+      }
+    </select>
+  </label>
+  <fieldset class="proveedores">
+    <legend>Proveedores</legend>
+    @for (p of proveedores.proveedores(); track p.id) {
+      <label class="casilla" [title]="p.motivoNoDisponible ?? ''">
+        <input type="checkbox" [checked]="elegidos().includes(p.id)" [disabled]="!p.disponible || corriendo()" (change)="alternar(p.id, $event)" />
+        {{ p.nombre }}
+      </label>
+    }
+  </fieldset>
+  <div class="botones">
+    @if (corriendo()) {
+      <button type="button" class="boton secundario" (click)="detener()">Detener</button>
+    } @else {
+      <button type="button" class="boton" [disabled]="!elegidos().length" (click)="evaluar()">Evaluar</button>
+    }
+    <button type="button" class="boton secundario" [disabled]="!filas().length" (click)="descargar()">Descargar resultados (JSON)</button>
+  </div>
+  @if (guardados().length) {
+    <label class="campo guardados">Corridas guardadas desde la consola
+      <select (change)="elegirGuardado($event)" [disabled]="corriendo()">
+        @if (combinado()) {
+          <option [value]="claveCombinado">Comparar: última corrida de cada proveedor</option>
+        }
+        @for (g of guardados(); track g.archivo) {
+          <option [value]="g.archivo">{{ g.archivo }} · {{ fecha(g.generadoEn) }}</option>
+        }
+      </select>
+    </label>
+  }
+</section>
+
+@if (error()) {
+  <p class="aviso error" role="alert">{{ error() }}</p>
+}
+
+@for (p of elegidos(); track p) {
+  @if (progresoDe(p); as pr) {
+    <div class="progreso">
+      <span class="nombre">{{ p }}</span>
+      <span class="pista" role="progressbar" aria-valuemin="0" [attr.aria-valuemax]="pr.total" [attr.aria-valuenow]="pr.hechos" [attr.aria-label]="'Avance de ' + p">
+        <span class="relleno" [style.width.%]="pr.total ? (pr.hechos / pr.total) * 100 : 0"></span>
+      </span>
+      <span class="cifra">{{ pr.hechos }}/{{ pr.total }}</span>
+    </div>
+  }
+}
+
+@if (resumenes().length) {
+  <section class="tarjeta" aria-labelledby="t-resumen">
+    <div class="titulo">
+      <h2 id="t-resumen">Comparativo</h2>
+      @if (origen()) { <span class="suave">Corrida guardada: {{ origen() }}</span> }
+    </div>
+    <div class="contenedor-tabla">
+      <table class="tabla resumen">
+        <thead>
+          <tr><th>Métrica</th>@for (r of resumenes(); track r.proveedor) { <th class="cifra">{{ r.proveedor }} <span class="suave">({{ r.total }})</span></th> }</tr>
+        </thead>
+        <tbody>
+          @for (m of metricas; track m.nombre) {
+            <tr>
+              <th scope="row">{{ m.nombre }}</th>
+              @for (r of resumenes(); track r.proveedor) {
+                <td class="cifra" [class.mejor]="mejor(m, r)">{{ m.texto(r) }}</td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+}
+
+@if (filas().length) {
+  <section class="tarjeta" aria-labelledby="t-casos">
+    <div class="titulo">
+      <h2 id="t-casos">Casos</h2>
+      <div class="filtros">
+        @if (proveedoresConFilas().length > 1) {
+          <label class="campo en-linea">Proveedor
+            <select (change)="vistaProveedor.set($any($event.target).value)">
+              @for (p of proveedoresConFilas(); track p) { <option [value]="p" [selected]="p === (vistaProveedor() ?? proveedoresConFilas()[0])">{{ p }}</option> }
+            </select>
+          </label>
+        }
+        <label class="casilla"><input type="checkbox" [checked]="soloFallos()" (change)="soloFallos.set($any($event.target).checked)" /> Solo fallos</label>
+      </div>
+    </div>
+    <p class="suave leyenda"><span class="muestra si"></span> acierto <span class="muestra no"></span> fallo <span class="muestra na"></span> sin etiqueta · clic en una fila para abrir el caso en el triage.</p>
+    <div class="contenedor-tabla">
+      <table class="tabla casos">
+        <thead>
+          <tr><th>Caso</th>@for (c of campos; track c.id) { <th>{{ c.nombre }}</th> }<th>Confianza</th><th>Latencia</th></tr>
+        </thead>
+        <tbody>
+          @for (f of filasVisibles(); track f.proveedor + f.fila.casoId) {
+            <tr tabindex="0" (click)="abrir(f.fila.casoId, f.fila.conjunto)" (keydown.enter)="abrir(f.fila.casoId, f.fila.conjunto)">
+              <td class="caso"><strong class="cifra">{{ f.fila.casoId }}</strong><span class="suave">{{ asuntos()[f.fila.casoId] }}</span></td>
+              @if (f.fila.error) {
+                <td colspan="7" class="celda no">{{ f.fila.error }}</td>
+              } @else {
+                @for (c of campos; track c.id) {
+                  <td class="celda" [class]="'celda ' + acierto(f.fila, c.id)" [title]="'Esperado: ' + esperadoDe(f.fila, c.id)">{{ obtenido(f.fila, c.id) }}</td>
+                }
+                <td class="cifra">{{ pct(f.fila.obtenido?.confianzaTipologia) }}</td>
+                <td class="cifra">{{ ms(f.fila.latenciaMs) }}</td>
+              }
+            </tr>
+          } @empty {
+            <tr><td colspan="8" class="suave">No hay fallos en esta corrida.</td></tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+}
